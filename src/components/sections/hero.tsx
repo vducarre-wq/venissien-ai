@@ -1,0 +1,95 @@
+import Image from "next/image";
+import Link from "next/link";
+import { IconArrowRight, IconCalendar, IconPartager, IconKing } from "@/components/icons";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { siteConfig } from "@/data/site-config";
+
+const badges = [
+  "Augmentez votre productivité",
+  "Améliorez l'expérience client",
+  "Proposez de nouvelles missions",
+];
+
+export function Hero() {
+  return (
+    <section className="relative flex items-center bg-bg-alt">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          {/* Left content */}
+          <div className="flex flex-col gap-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-[52px] font-extrabold leading-tight text-foreground">
+              Formation en IA Générative pour les professionnels du chiffre et
+              du droit
+            </h1>
+            <p className="text-lg text-text-secondary leading-relaxed max-w-xl">
+              Intégrez l&apos;IA générative dans votre quotidien professionnel.
+              Formé par un expert-comptable praticien.
+            </p>
+
+            {/* Badges */}
+            <div className="flex flex-wrap gap-2">
+              {badges.map((label) => (
+                <Badge key={label} variant="secondary" className="text-sm px-3 py-1">
+                  {label}
+                </Badge>
+              ))}
+            </div>
+
+            {/* CTA buttons */}
+            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              <Button asChild size="lg" className="rounded-lg px-8 py-3.5 font-semibold">
+                <a
+                  href={siteConfig.contact.googleCalendarUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconCalendar className="size-4" />
+                  Réserver un appel découverte
+                </a>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3.5 font-semibold">
+                <Link href="/formations">
+                  Découvrir les formations
+                  <IconArrowRight className="size-4" />
+                </Link>
+              </Button>
+            </div>
+
+            {/* Stats */}
+            <div className="flex flex-wrap gap-6 pt-4 text-sm text-text-secondary">
+              <div className="flex items-center gap-2">
+                <IconPartager className="size-5 text-primary" aria-hidden="true" />
+                <span className="font-semibold text-foreground">
+                  +{siteConfig.stats.professionalsTrainedCount}
+                </span>{" "}
+                professionnels formés
+              </div>
+              <div className="flex items-center gap-2">
+                <IconKing className="size-5 text-primary" aria-hidden="true" />
+                <span className="font-semibold text-foreground">
+                  {siteConfig.stats.satisfactionScore}/{siteConfig.stats.satisfactionMax}
+                </span>{" "}
+                de satisfaction
+              </div>
+            </div>
+          </div>
+
+          {/* Right image */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-lg aspect-square">
+              <Image
+                src="/images/hero-group.png"
+                alt="Formation IA pour professionnels du chiffre et du droit"
+                fill
+                className="object-contain"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
