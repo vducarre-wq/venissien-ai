@@ -1,9 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IconArrowRight, IconCalendar, IconPartager, IconKing, IconStar } from "@/components/icons";
+import { IconArrowRight, IconCalendar, IconPartager, IconKing, IconStar, IconAction, IconMagic, IconSmile } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { RotatingText } from "@/components/ui/rotating-text";
 import { siteConfig } from "@/data/site-config";
+
+const rotatingWords = [
+  "Experts-Comptables",
+  "Chefs de Mission",
+  "Collaborateurs",
+  "Gestionnaires de Paies",
+  "Avocats",
+  "Juristes",
+];
 
 const badges = [
   "Gagnez du temps sur vos missions",
@@ -11,7 +21,7 @@ const badges = [
   "Développez de nouvelles missions",
 ];
 
-const badgeIcons = [IconArrowRight, IconKing, IconStar];
+const badgeIcons = [IconAction, IconKing, IconMagic];
 
 export function Hero() {
   return (
@@ -21,7 +31,11 @@ export function Hero() {
           {/* Left content */}
           <div className="flex flex-col gap-6">
             <h1 className="text-3xl sm:text-4xl lg:text-[52px] font-extrabold leading-tight text-foreground">
-              Formation IA générative pour experts-comptables et avocats
+              Formation IA générative pour{" "}
+              <RotatingText
+                words={rotatingWords}
+                className="text-primary"
+              />
             </h1>
             <p className="text-lg text-text-secondary leading-relaxed max-w-xl">
               Intégrez l&apos;IA dans votre pratique quotidienne. Des formations
@@ -72,34 +86,30 @@ export function Hero() {
                 professionnels formés
               </div>
               <div className="flex items-center gap-2">
-                <IconStar className="size-5 text-primary" aria-hidden="true" />
+                <IconSmile className="size-5 text-primary" aria-hidden="true" />
                 <span className="font-semibold text-foreground">
                   {siteConfig.stats.satisfactionScore}/{siteConfig.stats.satisfactionMax}
                 </span>{" "}
                 de satisfaction
               </div>
               <div className="flex items-center gap-2">
-                <div className="flex gap-0.5">
-                  {[...Array(5)].map((_, i) => (
-                    <IconStar key={i} className="size-4 text-yellow-400" aria-hidden="true" />
-                  ))}
-                </div>
+                <IconStar className="size-5 text-yellow-400" aria-hidden="true" />
                 <span className="font-semibold text-foreground">
-                  {siteConfig.stats.googleReviewCount}
+                  5/5
                 </span>{" "}
-                avis Google
+                {siteConfig.stats.googleReviewCount} avis Google
               </div>
             </div>
           </div>
 
           {/* Right image */}
           <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-lg aspect-square">
+            <div className="relative w-full max-w-lg aspect-square overflow-hidden rounded-2xl">
               <Image
                 src="/images/hero-group.png"
                 alt="Formation IA pour professionnels du chiffre et du droit"
                 fill
-                className="object-contain"
+                className="object-contain rounded-2xl"
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
               />
