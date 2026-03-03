@@ -68,10 +68,10 @@ export function RotatingText({
     <span className={`inline-block ${className}`}>
       {/* Invisible full word to maintain stable width (prevents reflow) */}
       <span className="relative inline-block">
-        <span aria-hidden="true" className="invisible whitespace-pre">
+        <span aria-hidden="true" className="invisible whitespace-normal lg:whitespace-pre">
           {longestWord}
         </span>
-        <span className="absolute left-0 top-0 whitespace-pre" aria-live="polite">
+        <span className="absolute inset-x-0 top-0 whitespace-normal lg:whitespace-pre" aria-live="polite">
           {visibleText}
           <span
             className="inline-block w-[2px] h-[0.85em] bg-primary align-middle ml-0.5 animate-pulse"

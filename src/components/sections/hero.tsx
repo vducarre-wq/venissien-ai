@@ -7,8 +7,10 @@ import { RotatingText } from "@/components/ui/rotating-text";
 import { siteConfig } from "@/data/site-config";
 
 const rotatingWords = [
-  "Professionnels des Chiffres",
-  "Professionnels du Droit",
+  "Experts-Comptables",
+  "Avocats",
+  "Collaborateurs",
+  "Assistants",
 ];
 
 const badges = [
@@ -25,7 +27,7 @@ export function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left content */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 overflow-hidden">
             <h1 className="text-3xl sm:text-4xl lg:text-[52px] font-extrabold leading-tight text-foreground">
               Formation IA générative pour{" "}
               <RotatingText
