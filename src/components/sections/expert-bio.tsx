@@ -1,20 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IconArrowRight, IconKing, IconCash, IconTodo } from "@/components/icons";
+import { IconArrowRight, IconSymbole, IconPartager, IconTodo } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/data/site-config";
 
 const credentials = [
   {
-    icon: IconCash,
+    icon: IconSymbole,
     label: "Fondateur du cabinet AUM Conseil",
   },
   {
-    icon: IconTodo,
+    icon: IconPartager,
     label: "Formateur IA depuis 2023",
   },
   {
-    icon: IconKing,
+    icon: IconTodo,
     label: "Membre de l'Ordre des Experts-Comptables",
   },
 ];

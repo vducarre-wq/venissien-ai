@@ -7,12 +7,8 @@ import { RotatingText } from "@/components/ui/rotating-text";
 import { siteConfig } from "@/data/site-config";
 
 const rotatingWords = [
-  "Experts-Comptables",
-  "Chefs de Mission",
-  "Collaborateurs",
-  "Gestionnaires de Paies",
-  "Avocats",
-  "Juristes",
+  "Professionnels des Chiffres",
+  "Professionnels du Droit",
 ];
 
 const badges = [
