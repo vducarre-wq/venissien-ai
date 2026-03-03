@@ -16,7 +16,7 @@ const archivo = Archivo({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Venissien.ai — Formation IA pour Experts-Comptables et Avocats",
+    default: "Venissien.ai - Formation IA pour Experts-Comptables et Avocats",
     template: "%s | Venissien.ai",
   },
   description: siteConfig.description,
@@ -35,20 +35,20 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Venissien.ai — Formation IA pour Experts-Comptables et Avocats",
+    title: "Venissien.ai - Formation IA pour Experts-Comptables et Avocats",
     description: siteConfig.description,
     images: [
       {
         url: "/images/hero-group.png",
         width: 1200,
         height: 630,
-        alt: "Venissien.ai — Formation IA Générative",
+        alt: "Venissien.ai - Formation IA Générative",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Venissien.ai — Formation IA pour Experts-Comptables et Avocats",
+    title: "Venissien.ai - Formation IA pour Experts-Comptables et Avocats",
     description: siteConfig.description,
     images: ["/images/hero-group.png"],
   },

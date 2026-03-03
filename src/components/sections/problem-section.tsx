@@ -4,21 +4,21 @@ import { SectionHeader } from "@/components/shared/section-header";
 const problems = [
   {
     icon: IconTime,
-    title: "Perte de temps sur les tâches répétitives",
+    title: "Des heures perdues sur des tâches répétitives",
     description:
-      "L'IA peut automatiser jusqu'à 40% des tâches administratives en cabinet.",
+      "Rédaction de courriers, extraction de données, mise en forme de tableaux : ces tâches consomment un temps précieux que l'IA peut réduire significativement.",
   },
   {
     icon: IconAction,
-    title: "Concurrence digitale croissante",
+    title: "Une profession en pleine transformation",
     description:
-      "Les cabinets qui n'adoptent pas l'IA risquent de perdre en compétitivité.",
+      "L'Ordre des experts-comptables a fait de l'IA un axe stratégique. Les cabinets qui intègrent ces outils gagnent en productivité et en attractivité.",
   },
   {
     icon: IconSymbole,
-    title: "Manque de compétences IA",
+    title: "Un besoin de formation structurée",
     description:
-      "88% des professionnels du chiffre n'ont pas de formation structurée à l'IA.",
+      "Regarder des tutos ne suffit pas. Pour exploiter l'IA en cabinet, il faut une méthode adaptée aux contraintes métier : confidentialité, fiabilité, déontologie.",
   },
 ];
 
@@ -27,8 +27,8 @@ export function ProblemSection() {
     <section className="py-16 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          title="Pourquoi se former à l'IA ?"
-          subtitle="Les enjeux auxquels font face les professionnels du chiffre et du droit aujourd'hui."
+          title="Pourquoi se former à l'IA générative ?"
+          subtitle="Les professionnels du chiffre et du droit font face à des mutations profondes. L'IA n'est plus une option."
         />
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">

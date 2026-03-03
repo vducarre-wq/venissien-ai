@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site-config";
 export const metadata: Metadata = {
   title: "Politique de confidentialité",
   description:
-    "Politique de confidentialité et protection des données personnelles — venissien.ai",
+    "Politique de confidentialité et protection des données personnelles - venissien.ai",
 };
 
 export default function PolitiqueConfidentialitePage() {

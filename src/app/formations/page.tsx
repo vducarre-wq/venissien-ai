@@ -11,9 +11,9 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { IconTime, IconPartager, IconArrowRight, IconMagic } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Formations IA — Choisissez votre niveau",
+  title: "Formations IA pour cabinets comptables et avocats | Venissien.ai",
   description:
-    "Découvrez nos formations IA pour experts-comptables et avocats : Niveau 1 Acculturation, Niveau 2 Perfectionnement, Niveau 3 Transformation. Formations inter et intra.",
+    "3 niveaux de formation IA : initiation ChatGPT, prompt engineering avancé, transformation cabinet. Par un expert-comptable praticien. Réservez votre place.",
 };
 
 const coursesJsonLd = {
@@ -46,8 +46,8 @@ export default function FormationsPage() {
       <JsonLd data={coursesJsonLd} />
 
       <PageHeader
-        title="Nos formations IA"
-        description="Choisissez le niveau adapté à votre profil et vos objectifs. Chaque formation est conçue par un expert-comptable praticien pour les professionnels du chiffre et du droit."
+        title="Formations IA pour professionnels du chiffre et du droit"
+        description="Chaque formation est conçue et animée par Vénissien Ducarre, expert-comptable praticien. Le contenu s'appuie sur des cas d'usage réels, issus de sa pratique quotidienne au cabinet AUM Conseil. Choisissez le niveau adapté à votre profil."
         breadcrumbs={[
           { label: "Accueil", href: "/" },
           { label: "Formations", href: "/formations" },

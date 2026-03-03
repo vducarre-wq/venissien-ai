@@ -19,9 +19,9 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Conférences IA — Sensibilisez vos équipes",
+  title: "Conférences IA pour experts-comptables et avocats | Venissien.ai",
   description:
-    "Vénissien Ducarre intervient en conférence pour sensibiliser vos équipes, associés ou événements professionnels aux enjeux de l'IA générative.",
+    "Interventions et conférences sur l'IA générative pour vos événements professionnels. Par Vénissien Ducarre, expert-comptable et formateur IA. Demandez un devis.",
 };
 
 const themes = [
@@ -35,17 +35,17 @@ const themes = [
     icon: IconEcouter,
     title: "ChatGPT au quotidien en cabinet",
     description:
-      "Découvrir comment ChatGPT peut transformer les pratiques quotidiennes du cabinet : rédaction, analyse, extraction de données et communication client.",
+      "Comment ChatGPT peut transformer les pratiques du cabinet : rédaction, analyse, extraction de données et communication client. Avec démonstrations live.",
   },
   {
     icon: IconCash,
-    title: "L'IA Act et ses impacts",
+    title: "L'IA Act et ses impacts pour les professions réglementées",
     description:
-      "Décrypter la réglementation européenne sur l'IA, ses implications pour les professions réglementées et les bonnes pratiques de conformité.",
+      "Décryptage de la réglementation européenne sur l'IA, ses implications pour les métiers du chiffre et du droit, et les bonnes pratiques de conformité.",
   },
   {
     icon: IconAction,
-    title: "Transformation digitale par l'IA",
+    title: "Piloter la transformation IA de son cabinet",
     description:
       "Comment structurer l'intégration de l'IA dans un cabinet : gouvernance, formation des équipes, choix des outils et pilotage du changement.",
   },
@@ -53,25 +53,25 @@ const themes = [
 
 const formats = [
   {
+    icon: IconSymbole,
+    title: "Keynote",
+    duration: "20 - 45 min",
+    description:
+      "Intervention percutante en ouverture ou clôture d'événement. Un message fort pour sensibiliser et inspirer votre audience.",
+  },
+  {
     icon: IconEcouter,
     title: "Conférence",
-    duration: "45 min — 1h30",
+    duration: "45 min - 1h30",
     description:
-      "Intervention complète avec démonstrations live et temps de questions-réponses. Idéal pour un événement professionnel ou une assemblée générale.",
+      "Intervention complète avec démonstrations live et temps de questions-réponses. Idéale pour un événement professionnel ou une assemblée générale.",
   },
   {
     icon: IconPartager,
     title: "Table ronde",
-    duration: "1h — 1h30",
+    duration: "1h - 1h30",
     description:
-      "Échanges modérés avec d'autres intervenants autour des enjeux de l'IA pour votre secteur. Format participatif et dynamique.",
-  },
-  {
-    icon: IconSymbole,
-    title: "Keynote",
-    duration: "20 — 45 min",
-    description:
-      "Intervention percutante en ouverture ou clôture de votre événement. Un message fort pour inspirer et sensibiliser votre audience.",
+      "Échanges avec d'autres intervenants autour des enjeux de l'IA pour votre secteur. Format participatif et dynamique.",
   },
 ] as const;
 
@@ -79,8 +79,8 @@ export default function ConferencesPage() {
   return (
     <>
       <PageHeader
-        title="Conférences IA"
-        description="Sensibilisez vos équipes, associés ou événements professionnels aux enjeux de l'IA générative."
+        title="Conférences IA pour événements professionnels"
+        description="Sensibilisez vos équipes, associés ou partenaires aux enjeux de l'IA générative. Des interventions concrètes, adaptées aux professions du chiffre et du droit."
         breadcrumbs={[
           { label: "Accueil", href: "/" },
           { label: "Formations", href: "/formations" },
@@ -92,12 +92,16 @@ export default function ConferencesPage() {
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <p className="text-lg text-muted-foreground leading-relaxed">
-            {siteConfig.founder.name} intervient en conférence pour
-            sensibiliser vos équipes, associés ou événements professionnels aux
-            enjeux de l&apos;IA générative. Fort de son expérience de formateur
-            auprès de plus de {siteConfig.stats.professionalsTrainedCount}{" "}
-            professionnels, il propose des interventions adaptées à votre
-            contexte et à votre audience.
+            L&apos;IA générative transforme les métiers du chiffre et du droit.
+            Mais entre le battage médiatique et la réalité terrain, vos
+            collaborateurs ont besoin d&apos;un éclairage concret, donné par
+            quelqu&apos;un qui pratique leur métier.{" "}
+            {siteConfig.founder.name} intervient depuis{" "}
+            {siteConfig.stats.yearStarted} auprès de cabinets, ordres
+            professionnels et événements sectoriels. Fort de plus de{" "}
+            {siteConfig.stats.professionalsTrainedCount} professionnels formés,
+            il propose des interventions adaptées à votre contexte et à votre
+            audience.
           </p>
         </div>
       </section>
@@ -185,8 +189,8 @@ export default function ConferencesPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-2xl text-center">
           <SectionHeader
-            title="Invitez l'IA dans votre événement"
-            subtitle="Discutons de votre projet pour définir le format et le thème les plus pertinents pour votre audience."
+            title="Invitez l'IA dans votre prochain événement"
+            subtitle="Discutons de votre projet pour définir le format, le thème et la durée les plus pertinents pour votre audience."
           />
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button asChild size="lg">

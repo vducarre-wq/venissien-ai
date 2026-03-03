@@ -7,9 +7,12 @@ export function ClientLogos() {
 
   return (
     <section className="py-12 lg:py-16 bg-white overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-sm font-medium uppercase tracking-wider text-muted-foreground mb-10">
-          Ils nous font confiance
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-xl font-bold text-foreground text-center mb-3">
+          Ils nous ont fait confiance
+        </h2>
+        <p className="text-sm text-muted-foreground text-center mb-8">
+          Nos clients et partenaires
         </p>
       </div>
 
@@ -19,18 +22,18 @@ export function ClientLogos() {
         <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-white to-transparent z-10" />
 
         {/* Marquee track */}
-        <div className="flex animate-marquee w-max">
+        <div className="flex animate-marquee w-max hover:[animation-play-state:paused]">
           {duplicatedLogos.map((logo, index) => (
             <div
               key={`${logo.name}-${index}`}
-              className="flex items-center justify-center mx-8 md:mx-12 shrink-0"
+              className="flex items-center justify-center mx-6 lg:mx-8 shrink-0"
             >
               <Image
                 src={logo.imagePath}
-                alt={logo.name}
+                alt={`Logo ${logo.name}`}
                 width={logo.width}
                 height={logo.height}
-                className="h-10 md:h-14 w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                className="h-10 lg:h-12 max-w-[160px] lg:max-w-[180px] w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
               />
             </div>
           ))}

@@ -6,12 +6,17 @@ export interface ClientLogo {
 }
 
 export const clientLogos: ClientLogo[] = [
-  { name: "Talenz Ares", imagePath: "/images/clients/talenz-ares.jpeg", width: 200, height: 80 },
-  { name: "Talenz Audit", imagePath: "/images/clients/talenz-audit.jpeg", width: 200, height: 80 },
-  { name: "CK", imagePath: "/images/clients/ck-logo.png", width: 150, height: 60 },
-  { name: "Stamina", imagePath: "/images/clients/stamina-logo.svg", width: 200, height: 50 },
-  { name: "Endrix", imagePath: "/images/clients/endrix.png", width: 150, height: 60 },
-  { name: "Sogeca", imagePath: "/images/clients/sogeca.png", width: 200, height: 50 },
+  { name: "CECCA", imagePath: "/images/clients/cecca.svg", width: 180, height: 60 },
+  { name: "Endrix", imagePath: "/images/clients/endrix-footer.jpg", width: 180, height: 60 },
+  { name: "Talenz", imagePath: "/images/clients/talenz.svg", width: 180, height: 60 },
+  { name: "CER France", imagePath: "/images/clients/cerfrance.png", width: 180, height: 60 },
+  { name: "Roche et Cie", imagePath: "/images/clients/roche-et-cie.svg", width: 180, height: 60 },
+  { name: "June", imagePath: "/images/clients/june.png", width: 160, height: 60 },
+  { name: "SAGEC", imagePath: "/images/clients/sagec.png", width: 180, height: 60 },
+  { name: "SOGECA", imagePath: "/images/clients/sogeca-new.png", width: 180, height: 60 },
+  { name: "GCR", imagePath: "/images/clients/gcr.png", width: 160, height: 60 },
+  { name: "Pyramide Conseils", imagePath: "/images/clients/pyramide-conseils.png", width: 180, height: 60 },
+  { name: "Syneosia", imagePath: "/images/clients/syneosia.png", width: 180, height: 60 },
 ];
 
 export const cabinetReferences: string[] = [

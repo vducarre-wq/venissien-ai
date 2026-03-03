@@ -37,11 +37,11 @@ import {
 /* ------------------------------------------------------------------ */
 export const metadata: Metadata = {
   title:
-    "Atelier Dashboard FEC avec Claude — Tableau de bord interactif en 2h | Venissien.ai",
+    "Atelier Dashboard FEC avec Claude - Tableau de bord interactif en 2h | Venissien.ai",
   description:
     "Transformez vos FEC en dashboard interactif en 2h. Atelier live le 12 mars 2026 par Vénissien Ducarre, expert-comptable. 100 % en local, zéro code. +500 professionnels formés.",
   openGraph: {
-    title: "Atelier Dashboard FEC avec Claude — 12 mars 2026",
+    title: "Atelier Dashboard FEC avec Claude - 12 mars 2026",
     description:
       "Créez un tableau de bord interactif à partir de vos FEC en 2 heures. Atelier live animé par un expert-comptable praticien.",
     url: "https://venissien.ai/formations/atelier-dashboard-fec",
@@ -79,10 +79,10 @@ const programBlocs = [
   },
   {
     number: 3,
-    title: "Les briques Claude",
+    title: "Les fonctionnalités Claude utilisées",
     duration: "15 min",
     description:
-      "Projets Claude, Artefacts, fonctionnalité Code — uniquement ce qui sert au dashboard.",
+      "Projets Claude, Artefacts, fonctionnalité Code - uniquement ce qui sert au dashboard.",
     objective: "Donner le minimum technique nécessaire.",
     icon: IconAction,
   },
@@ -177,7 +177,7 @@ export default function AtelierDashboardFecPage() {
               className="mb-6 text-sm px-4 py-1.5 inline-flex items-center gap-1.5"
             >
               <IconCalendar className="size-3.5" />
-              Jeudi 12 mars 2026 — 17h30 à 19h30
+              Jeudi 12 mars 2026 - 17h30 à 19h30
             </Badge>
 
             <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-extrabold leading-tight text-foreground tracking-tight">
@@ -200,7 +200,7 @@ export default function AtelierDashboardFecPage() {
               >
                 <a href="#pricing">
                   <IconArrowRight className="size-4" />
-                  Accéder à l&apos;atelier — à partir de 199 € HT
+                  Accéder à l&apos;atelier - à partir de 199 € HT
                 </a>
               </Button>
             </div>
@@ -279,7 +279,7 @@ export default function AtelierDashboardFecPage() {
       </section>
 
       {/* ============================================================ */}
-      {/* SOLUTION — Ce que vous allez obtenir                          */}
+      {/* SOLUTION - Ce que vous allez obtenir                          */}
       {/* ============================================================ */}
       <section className="py-16 lg:py-24 bg-bg-alt">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -311,7 +311,7 @@ export default function AtelierDashboardFecPage() {
                 icon: IconKing,
                 title: "KPIs synthèse",
                 description:
-                  "CA, marge brute, masse salariale, EBE — avec jauges couleur et alertes automatiques.",
+                  "CA, marge brute, masse salariale, EBE - avec jauges couleur et alertes automatiques.",
               },
               {
                 icon: IconSymbole,
@@ -360,7 +360,7 @@ export default function AtelierDashboardFecPage() {
       </section>
 
       {/* ============================================================ */}
-      {/* FORMAT — Un atelier pensé pour la pratique                     */}
+      {/* FORMAT - Un atelier pensé pour la pratique                     */}
       {/* ============================================================ */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 max-w-5xl">
@@ -410,7 +410,7 @@ export default function AtelierDashboardFecPage() {
       </section>
 
       {/* ============================================================ */}
-      {/* PROGRAMME — Les 6 blocs                                       */}
+      {/* PROGRAMME - Les 6 blocs                                       */}
       {/* ============================================================ */}
       <section className="py-16 lg:py-24 bg-bg-alt">
         <div className="container mx-auto px-4 max-w-3xl">
@@ -485,7 +485,7 @@ export default function AtelierDashboardFecPage() {
               <div className="relative size-32 md:size-40 rounded-2xl overflow-hidden">
                 <Image
                   src="/images/venissien-ducarre2.webp"
-                  alt="Vénissien Ducarre — Expert-Comptable & Formateur IA"
+                  alt="Vénissien Ducarre - Expert-Comptable & Formateur IA"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 128px, 160px"
@@ -545,7 +545,7 @@ export default function AtelierDashboardFecPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionHeader
             title="Choisissez votre formule"
-            subtitle="Paiement unique — accès à vie au replay et aux supports"
+            subtitle="Paiement unique - accès à vie au replay et aux supports"
           />
           <div className="mt-12 grid md:grid-cols-2 gap-8 items-start">
             {/* Offre 1 : Live + Replay */}
@@ -589,7 +589,7 @@ export default function AtelierDashboardFecPage() {
                     className="w-full rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold"
                   >
                     <a href={PAYMENT_LINK_199}>
-                      Accéder à l&apos;atelier — 199 € HT
+                      Accéder à l&apos;atelier - 199 € HT
                     </a>
                   </Button>
                 </div>
@@ -631,7 +631,7 @@ export default function AtelierDashboardFecPage() {
                 <div className="mt-4 rounded-lg bg-green-50 border border-green-200 px-4 py-3">
                   <p className="text-xs font-semibold text-green-800 flex items-center gap-1.5">
                     <IconCheckCircle className="size-3.5 text-green-600" />
-                    100 % en local — aucune fuite de données clients
+                    100 % en local - aucune fuite de données clients
                   </p>
                   <p className="mt-1 text-xs text-green-700">
                     Le dashboard fonctionne dans votre navigateur, sans serveur
@@ -646,7 +646,7 @@ export default function AtelierDashboardFecPage() {
                     className="w-full rounded-lg font-bold"
                   >
                     <a href={PAYMENT_LINK_449}>
-                      Accéder à l&apos;atelier + outil — 449 € HT
+                      Accéder à l&apos;atelier + outil - 449 € HT
                       <IconArrowRight className="size-4 ml-2" />
                     </a>
                   </Button>
@@ -678,7 +678,7 @@ export default function AtelierDashboardFecPage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight max-w-3xl mx-auto">
             {"FEC → Dashboard en 2 heures."}
             <br />
-            <span className="text-white/80">12 mars 2026 — 17h30.</span>
+            <span className="text-white/80">12 mars 2026 - 17h30.</span>
           </h2>
           <p className="mt-5 text-lg text-white/80 max-w-xl mx-auto leading-relaxed">
             Rejoignez l&apos;atelier et transformez la façon dont vous présentez
@@ -692,7 +692,7 @@ export default function AtelierDashboardFecPage() {
               className="bg-white !text-primary font-bold rounded-lg hover:bg-gray-100 px-8 py-4"
             >
               <a href="#pricing">
-                Accéder à l&apos;atelier — à partir de 199 € HT
+                Accéder à l&apos;atelier - à partir de 199 € HT
               </a>
             </Button>
             <Button
@@ -733,7 +733,7 @@ export default function AtelierDashboardFecPage() {
             },
             organizer: {
               "@type": "Organization",
-              name: "Venissien.ai — AUM Conseil",
+              name: "Venissien.ai - AUM Conseil",
               url: "https://venissien.ai",
             },
             performer: {

@@ -20,9 +20,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { siteConfig } from "@/data/site-config";
 
 export const metadata: Metadata = {
-  title: "À propos — Vénissien Ducarre, Expert-Comptable & Formateur IA",
+  title: "Vénissien Ducarre - Expert-comptable et formateur IA | Venissien.ai",
   description:
-    "Découvrez le parcours de Vénissien Ducarre, expert-comptable et formateur IA. Fondateur d'AUM Conseil, il a formé +500 professionnels du chiffre et du droit à l'IA.",
+    "Expert-comptable inscrit à l'Ordre, fondateur d'AUM Conseil, formateur IA. +500 professionnels formés depuis 2023. Découvrez son parcours et son approche.",
 };
 
 const personJsonLd = {
@@ -53,29 +53,29 @@ const parcours = [
     icon: IconCash,
     title: "Expert-comptable diplômé",
     description:
-      "Fondateur du cabinet AUM Conseil, il exerce au quotidien les missions classiques d'expertise comptable.",
+      "Fondateur du cabinet AUM Conseil, il exerce au quotidien les missions classiques d'expertise comptable. Cette pratique quotidienne nourrit directement le contenu de ses formations.",
   },
   {
     icon: IconSymbole,
     title: "Pionnier de l'IA en expertise comptable",
-    description: `Depuis ${siteConfig.stats.yearStarted}, il explore et intègre l'IA générative dans sa pratique professionnelle.`,
+    description: `Depuis ${siteConfig.stats.yearStarted}, il explore et intègre l'IA générative dans sa pratique professionnelle. Il a été parmi les premiers experts-comptables en France à structurer une offre de formation dédiée à la profession.`,
   },
   {
     icon: IconTodo,
     title: `+${siteConfig.stats.professionalsTrainedCount} professionnels formés`,
     description:
-      "Experts-comptables, avocats, DAF, collaborateurs de cabinet : des profils variés, un objectif commun.",
+      "Experts-comptables, commissaires aux comptes, avocats, DAF, collaborateurs de cabinet : des profils variés, un objectif commun - exploiter l'IA de manière concrète et sécurisée.",
   },
   {
     icon: IconKing,
     title: `Note de satisfaction : ${siteConfig.stats.satisfactionScore}/${siteConfig.stats.satisfactionMax}`,
-    description: `Sur ${siteConfig.stats.respondentCount} répondants, une note qui reflète la qualité et la pertinence des formations.`,
+    description: `Sur ${siteConfig.stats.respondentCount} répondants, une note qui reflète la pertinence et la qualité des formations. Les retours soulignent systématiquement l'approche praticienne et les cas d'usage directement applicables.`,
   },
   {
     icon: IconEcouter,
     title: `${siteConfig.stats.googleReviewCount} avis Google 5 étoiles`,
     description:
-      "Des retours authentiques de professionnels qui ont transformé leur pratique grâce à l'IA.",
+      "Des retours authentiques de professionnels qui ont intégré l'IA dans leur quotidien après nos formations.",
   },
 ];
 
@@ -84,19 +84,19 @@ const approche = [
     icon: IconKing,
     title: "Formateur praticien",
     description:
-      "Pas de théorie déconnectée : il utilise l'IA au quotidien dans son propre cabinet d'expertise comptable.",
+      "Pas de théorie déconnectée. Il utilise l'IA au quotidien dans son propre cabinet. Chaque technique enseignée a été testée et validée sur des cas réels avant d'être intégrée au programme.",
   },
   {
     icon: IconTodo,
-    title: "Formation continue sur les évolutions IA",
+    title: "Veille permanente sur les évolutions IA",
     description:
-      "Veille permanente sur les nouveaux outils et modèles pour proposer des formations toujours à jour.",
+      "Les outils et les modèles évoluent rapidement. Le contenu des formations est mis à jour en continu pour refléter les dernières avancées et les outils les plus pertinents pour votre métier.",
   },
   {
     icon: IconSymbole,
-    title: "Approche pragmatique pour métiers réglementés",
+    title: "Approche adaptée aux professions réglementées",
     description:
-      "Des cas d'usage concrets adaptés aux contraintes déontologiques et de confidentialité des professions du chiffre et du droit.",
+      "Les métiers du chiffre et du droit ont des contraintes spécifiques : confidentialité des données, déontologie, fiabilité des informations. Chaque formation intègre ces exigences dès la conception.",
   },
 ];
 
@@ -129,7 +129,7 @@ export default function AProposPage() {
       <JsonLd data={personJsonLd} />
 
       <PageHeader
-        title="À propos de Vénissien Ducarre"
+        title="Vénissien Ducarre - Expert-comptable et formateur IA"
         breadcrumbs={[
           { label: "Accueil", href: "/" },
           { label: "À propos", href: "/a-propos" },

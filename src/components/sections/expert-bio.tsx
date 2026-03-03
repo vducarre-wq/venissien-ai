@@ -11,7 +11,7 @@ const credentials = [
   },
   {
     icon: IconTodo,
-    label: "Certifié par OpenAI",
+    label: "Formateur IA depuis 2023",
   },
   {
     icon: IconKing,

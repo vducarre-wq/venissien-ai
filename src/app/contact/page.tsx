@@ -17,15 +17,15 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { siteConfig } from "@/data/site-config";
 
 export const metadata: Metadata = {
-  title: "Contact — Échangeons sur vos besoins en formation IA",
+  title: "Contact - Formation IA pour experts-comptables | Venissien.ai",
   description:
-    "Contactez Vénissien Ducarre pour vos formations IA. Réservez un appel découverte gratuit ou envoyez votre demande. Réponse sous 24h.",
+    "Une question sur nos formations IA ? Un projet de formation intra ? Contactez-nous. Réponse sous 24h. Appel découverte gratuit de 15 minutes.",
 };
 
 const contactPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  name: "Contact — Venissien.ai",
+  name: "Contact - Venissien.ai",
   url: siteConfig.url + "/contact",
   mainEntity: {
     "@type": "Organization",

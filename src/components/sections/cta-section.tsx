@@ -8,11 +8,12 @@ export function CtaSection() {
     <section className="relative py-16 lg:py-24 bg-primary overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight max-w-3xl mx-auto">
-          Prêt à intégrer l&apos;IA dans votre quotidien ?
+          Prêt à intégrer l&apos;IA dans votre quotidien professionnel ?
         </h2>
         <p className="mt-5 text-lg text-white/80 max-w-xl mx-auto leading-relaxed">
-          Réservez un appel découverte gratuit de 15 minutes pour discuter de
-          vos besoins.
+          Réservez un appel découverte de 15 minutes. Gratuit, sans engagement.
+          On échange sur vos besoins et on identifie la formation la plus
+          adaptée à votre profil.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
@@ -34,7 +35,7 @@ export function CtaSection() {
             asChild
             variant="outline"
             size="lg"
-            className="border-2 border-white text-white rounded-lg hover:bg-white/10 px-8 py-3.5 font-semibold"
+            className="border-2 border-white bg-white text-primary rounded-lg hover:bg-gray-100 px-8 py-3.5 font-semibold"
           >
             <Link href="/formations">
               Voir les formations

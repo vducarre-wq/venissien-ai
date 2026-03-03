@@ -9,9 +9,9 @@ export const mainNavigation: NavItem[] = [
     label: "Formations",
     href: "/formations",
     children: [
-      { label: "Niveau 1 — Acculturation", href: "/formations/niveau-1-initiation-ia" },
-      { label: "Niveau 2 — Perfectionnement", href: "/formations/niveau-2-perfectionnement" },
-      { label: "Niveau 3 — Transformation", href: "/formations/niveau-3-transformation-cabinet" },
+      { label: "Niveau 1 - Acculturation", href: "/formations/niveau-1-initiation-ia" },
+      { label: "Niveau 2 - Perfectionnement", href: "/formations/niveau-2-perfectionnement" },
+      { label: "Niveau 3 - Transformation", href: "/formations/niveau-3-transformation-cabinet" },
       { label: "Conférences", href: "/formations/conferences" },
       { label: "Atelier Dashboard FEC", href: "/formations/atelier-dashboard-fec" },
     ],
@@ -22,9 +22,9 @@ export const mainNavigation: NavItem[] = [
 
 export const footerNavigation = {
   formations: [
-    { label: "Niveau 1 — Acculturation", href: "/formations/niveau-1-initiation-ia" },
-    { label: "Niveau 2 — Perfectionnement", href: "/formations/niveau-2-perfectionnement" },
-    { label: "Niveau 3 — Transformation", href: "/formations/niveau-3-transformation-cabinet" },
+    { label: "Niveau 1 - Acculturation", href: "/formations/niveau-1-initiation-ia" },
+    { label: "Niveau 2 - Perfectionnement", href: "/formations/niveau-2-perfectionnement" },
+    { label: "Niveau 3 - Transformation", href: "/formations/niveau-3-transformation-cabinet" },
     { label: "Conférences", href: "/formations/conferences" },
     { label: "Atelier Dashboard FEC", href: "/formations/atelier-dashboard-fec" },
   ],

@@ -1,15 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import { IconArrowRight, IconCalendar, IconPartager, IconKing } from "@/components/icons";
+import { IconArrowRight, IconCalendar, IconPartager, IconKing, IconStar } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { siteConfig } from "@/data/site-config";
 
 const badges = [
-  "Augmentez votre productivité",
-  "Améliorez l'expérience client",
-  "Proposez de nouvelles missions",
+  "Gagnez du temps sur vos missions",
+  "Renforcez votre relation client",
+  "Développez de nouvelles missions",
 ];
+
+const badgeIcons = [IconArrowRight, IconKing, IconStar];
 
 export function Hero() {
   return (
@@ -19,21 +21,25 @@ export function Hero() {
           {/* Left content */}
           <div className="flex flex-col gap-6">
             <h1 className="text-3xl sm:text-4xl lg:text-[52px] font-extrabold leading-tight text-foreground">
-              Formation en IA Générative pour les professionnels du chiffre et
-              du droit
+              Formation IA générative pour experts-comptables et avocats
             </h1>
             <p className="text-lg text-text-secondary leading-relaxed max-w-xl">
-              Intégrez l&apos;IA générative dans votre quotidien professionnel.
-              Formé par un expert-comptable praticien.
+              Intégrez l&apos;IA dans votre pratique quotidienne. Des formations
+              conçues et animées par un expert-comptable qui utilise ces outils
+              au cabinet, chaque jour.
             </p>
 
             {/* Badges */}
             <div className="flex flex-wrap gap-2">
-              {badges.map((label) => (
-                <Badge key={label} variant="secondary" className="text-sm px-3 py-1">
-                  {label}
-                </Badge>
-              ))}
+              {badges.map((label, index) => {
+                const Icon = badgeIcons[index];
+                return (
+                  <Badge key={label} variant="secondary" className="text-sm px-3 py-1">
+                    <Icon className="size-4 text-primary" aria-hidden="true" />
+                    {label}
+                  </Badge>
+                );
+              })}
             </div>
 
             {/* CTA buttons */}
@@ -66,11 +72,22 @@ export function Hero() {
                 professionnels formés
               </div>
               <div className="flex items-center gap-2">
-                <IconKing className="size-5 text-primary" aria-hidden="true" />
+                <IconStar className="size-5 text-primary" aria-hidden="true" />
                 <span className="font-semibold text-foreground">
                   {siteConfig.stats.satisfactionScore}/{siteConfig.stats.satisfactionMax}
                 </span>{" "}
                 de satisfaction
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <IconStar key={i} className="size-4 text-yellow-400" aria-hidden="true" />
+                  ))}
+                </div>
+                <span className="font-semibold text-foreground">
+                  {siteConfig.stats.googleReviewCount}
+                </span>{" "}
+                avis Google
               </div>
             </div>
           </div>

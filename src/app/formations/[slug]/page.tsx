@@ -82,23 +82,23 @@ function ComingSoonFormation({
   const pillars = [
     {
       icon: IconMagic,
-      title: "Stratégie IA",
-      description: "Définir une vision et une feuille de route IA pour votre cabinet",
+      title: "Diagnostic et stratégie IA",
+      description: "Évaluer la maturité IA de votre cabinet et définir une feuille de route adaptée à vos objectifs",
     },
     {
       icon: IconAction,
-      title: "Gouvernance",
-      description: "Structurer les règles, rôles et responsabilités autour de l'IA",
+      title: "Gouvernance et conformité",
+      description: "Mettre en place les règles d'usage, la gestion de la confidentialité et le respect des contraintes déontologiques",
     },
     {
       icon: IconPartager,
-      title: "Montée en compétences",
-      description: "Piloter la formation de vos équipes à l'échelle du cabinet",
+      title: "Formation des équipes",
+      description: "Piloter la montée en compétences de chaque profil : associés, chefs de mission, collaborateurs",
     },
     {
-      icon: IconAction,
-      title: "Processus métier",
-      description: "Intégrer l'IA dans vos workflows comptables et juridiques",
+      icon: IconSuivre,
+      title: "Processus et outils",
+      description: "Sélectionner les solutions IA pertinentes et les intégrer dans vos workflows métier",
     },
   ];
 
@@ -131,8 +131,8 @@ function ComingSoonFormation({
       <section className="py-16 lg:py-24 bg-bg-alt">
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionHeader
-            title="Les 4 piliers du programme"
-            subtitle="Un accompagnement complet pour transformer votre cabinet grâce à l'IA"
+            title="Ce que couvre le programme"
+            subtitle="Un accompagnement complet pour passer de l'expérimentation à l'adoption structurée"
           />
           <div className="mt-12 grid sm:grid-cols-2 gap-6">
             {pillars.map((pillar) => (

@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Venissien.ai",
   legalName: "AUM Conseil",
   description:
-    "Formations IA générative par un expert-comptable praticien. +500 professionnels formés depuis 2023. ChatGPT, prompts métiers, GPTs personnalisés pour cabinets EC et avocats.",
+    "Formations IA générative conçues par un expert-comptable praticien. +500 professionnels formés depuis 2023. ChatGPT, prompts métiers, GPTs personnalisés pour cabinets comptables et avocats.",
   url: "https://venissien.ai",
   contact: {
     email: "contact@venissien.ai",
@@ -23,8 +23,8 @@ export const siteConfig = {
   founder: {
     name: "Vénissien Ducarre",
     title: "Expert-Comptable & Formateur IA",
-    bio: "Expert-comptable passionné par l'intelligence artificielle, fondateur du cabinet AUM Conseil. Il accompagne les entrepreneurs et professionnels des chiffres dans l'intégration de l'IA depuis 2023. Il a formé plus de 500 experts-comptables et collaborateurs de cabinet à l'intelligence artificielle.",
+    bio: "Expert-comptable inscrit à l'Ordre (AURA), fondateur du cabinet AUM Conseil. Depuis 2023, il forme les professionnels du chiffre et du droit à l'IA générative. Sa particularité : il utilise ces outils au quotidien dans son propre cabinet. Pas de théorie déconnectée, des cas d'usage issus de sa pratique réelle.",
     shortBio:
-      "L'IA par un expert-comptable, pour les professionnels du chiffre et du droit.",
+      "L'IA par un expert-comptable praticien, pour les professionnels du chiffre et du droit.",
   },
 } as const;

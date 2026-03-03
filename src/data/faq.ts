@@ -8,7 +8,7 @@ export const faqByPage: Record<string, FaqItem[]> = {
     {
       question: "Quelle formation choisir si je débute avec l'IA ?",
       answer:
-        "Le Niveau 1 — Acculturation est conçu pour les débutants. Aucun prérequis technique n'est nécessaire, une bonne maîtrise de l'outil informatique suffit. Vous apprendrez les bases de l'IA générative, maîtriserez ChatGPT et découvrirez des cas d'usages concrets pour votre métier.",
+        "Le Niveau 1 - Acculturation est conçu pour les débutants. Aucun prérequis technique n'est nécessaire, une bonne maîtrise de l'outil informatique suffit. Vous apprendrez les bases de l'IA générative, maîtriserez ChatGPT et découvrirez des cas d'usages concrets pour votre métier.",
     },
     {
       question: "Quelle est la différence entre les formations inter et intra ?",
@@ -90,9 +90,9 @@ export const faqByPage: Record<string, FaqItem[]> = {
         "Oui. Le replay intégral et le support écrit complet sont inclus dans les deux offres. Avec l'offre à 449 \u20AC, vous recevez en plus l'outil fini, prêt à l'emploi : pas besoin de tout retenir.",
     },
     {
-      question: "199 \u20AC ou 449 \u20AC pour un atelier en ligne, c'est cher non ?",
+      question: "199 \u20AC ou 449 \u20AC pour un atelier en ligne, est-ce le juste prix ?",
       answer:
-        "Ce n'est pas un webinaire : c'est un atelier avec un livrable concret que vous utiliserez dès le lendemain avec vos clients. Une formation classique coûte 10 fois plus. L'offre à 449 \u20AC vous fait économiser 4 à 8 heures de configuration, amorties dès le premier client analysé.",
+        "Ce n'est pas un webinaire : c'est un atelier avec un livrable concret que vous utiliserez dès le lendemain avec vos clients. L'offre à 449 \u20AC vous fait économiser plusieurs heures de configuration, amorties dès le premier client analysé.",
     },
     {
       question: "Je ne suis pas disponible le 12 mars, puis-je quand même en profiter ?",

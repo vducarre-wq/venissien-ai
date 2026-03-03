@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site-config";
 export const metadata: Metadata = {
   title: "Conditions Générales de Vente",
   description:
-    "CGV des formations IA — AUM Conseil / venissien.ai",
+    "CGV des formations IA - AUM Conseil / venissien.ai",
 };
 
 export default function CGVPage() {

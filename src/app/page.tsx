@@ -1,6 +1,6 @@
 import { Hero } from "@/components/sections/hero";
 import { ClientLogos } from "@/components/sections/client-logos";
-import { StatsBanner } from "@/components/sections/stats-banner";
+
 import { ProblemSection } from "@/components/sections/problem-section";
 import { FormationsPreview } from "@/components/sections/formations-preview";
 import { ExpertBio } from "@/components/sections/expert-bio";
@@ -23,7 +23,6 @@ export default function HomePage() {
       <JsonLd data={websiteJsonLd} />
       <Hero />
       <ClientLogos />
-      <StatsBanner />
       <ProblemSection />
       <FormationsPreview />
       <ExpertBio />

@@ -35,11 +35,11 @@ export const formations: Formation[] = [
   {
     slug: "niveau-1-initiation-ia",
     level: 1,
-    title: "Formation IA Niveau 1 — Acculturation et initiation à ChatGPT",
-    shortTitle: "Niveau 1 — Acculturation",
-    subtitle: "Maîtrisez ChatGPT dans votre cabinet en 1 journée",
+    title: "Formation IA Niveau 1 - Maîtrisez ChatGPT dans votre cabinet en une journée",
+    shortTitle: "Niveau 1 - Acculturation",
+    subtitle: "Comprenez les bases de l'IA générative et repartez avec des cas d'usage directement applicables à vos missions",
     description:
-      "Comprenez les bases de l'IA générative, maîtrisez ChatGPT et découvrez les cas d'usages concrets pour votre métier. Une formation conçue par un expert-comptable praticien.",
+      "Comprenez les fondamentaux de l'IA générative et maîtrisez ChatGPT en une journée. Vous repartez avec une méthode de rédaction de prompts et des cas d'usage directement applicables à votre métier.",
     duration: "1 journée (7h)",
     audience: [
       "Experts-comptables",
@@ -50,11 +50,11 @@ export const formations: Formation[] = [
     ],
     prerequisites: null,
     objectives: [
-      "Comprendre le fonctionnement et les bases de l'IA générative",
-      "Maîtriser l'interface et les fonctionnalités de ChatGPT",
-      "Acquérir la compétence clé : la rédaction de prompts efficaces",
-      "Identifier les limites et les risques pour les éviter",
-      "Appliquer l'IA à des cas d'usages concrets de votre métier",
+      "Comprendre le fonctionnement de l'IA générative et ses implications pour votre métier",
+      "Utiliser ChatGPT de manière professionnelle et structurée",
+      "Rédiger des prompts efficaces grâce à la méthode RCT+",
+      "Identifier les limites de l'IA et les risques à éviter (hallucinations, confidentialité)",
+      "Appliquer l'IA à vos missions dès le lendemain : communication client, extraction de données, analyse stratégique",
     ],
     modules: [
       {
@@ -71,7 +71,7 @@ export const formations: Formation[] = [
       },
       {
         number: 2,
-        title: "Les différents acteurs et les évolutions attendues",
+        title: "Les acteurs et les évolutions à connaître",
         duration: "~30 min",
         topics: [
           "OpenAI : le pionnier",
@@ -135,11 +135,11 @@ export const formations: Formation[] = [
       },
     ],
     results: [
-      "Vous maîtrisez les fondamentaux de l'IA générative",
-      "Vous savez utiliser ChatGPT de manière professionnelle",
-      "Vous rédigez des prompts efficaces et structurés",
-      "Vous identifiez les risques et les bonnes pratiques de confidentialité",
-      "Vous appliquez l'IA à vos missions quotidiennes dès J+1",
+      "Vous comprenez les fondamentaux de l'IA générative et ses enjeux",
+      "Vous utilisez ChatGPT de manière professionnelle et structurée",
+      "Vous rédigez des prompts efficaces avec la méthode RCT+",
+      "Vous identifiez les hallucinations et appliquez les bonnes pratiques de confidentialité",
+      "Vous appliquez l'IA à vos missions dès le lendemain",
     ],
     pricing: {
       inter: { amount: 400, unit: "€ HT / personne" },
@@ -154,19 +154,19 @@ export const formations: Formation[] = [
     isComingSoon: false,
     badgeLabel: "Initiation",
     seo: {
-      title: "Formation IA Niveau 1 — Maîtrisez ChatGPT en cabinet comptable",
+      title: "Formation IA Niveau 1 - Maîtrisez ChatGPT en cabinet | Venissien.ai",
       description:
-        "Formation IA d'une journée pour experts-comptables et avocats. Apprenez ChatGPT, le prompt engineering et les cas d'usages métiers. +500 professionnels formés.",
+        "Formation IA d'une journée pour experts-comptables et avocats. Maîtrisez ChatGPT, le prompt engineering et les cas d'usage métier. +500 professionnels formés.",
     },
   },
   {
     slug: "niveau-2-perfectionnement",
     level: 2,
-    title: "Formation IA Niveau 2 — Créez vos assistants et transformez vos pratiques",
-    shortTitle: "Niveau 2 — Perfectionnement",
-    subtitle: "Approfondissez l'usage de l'IA et créez vos propres assistants GPT",
+    title: "Formation IA Niveau 2 - Créez vos assistants IA et transformez vos pratiques",
+    shortTitle: "Niveau 2 - Perfectionnement",
+    subtitle: "Maîtrisez les techniques avancées de prompt engineering et créez vos propres GPTs pour votre cabinet",
     description:
-      "Maîtrisez les prompts avancés, choisissez les bons outils IA et créez vos propres assistants GPT personnalisés pour votre cabinet.",
+      "Maîtrisez 5 techniques de prompt engineering avancé, découvrez les meilleurs outils IA au-delà de ChatGPT et créez vos propres assistants GPT personnalisés pour votre cabinet.",
     duration: "1 journée (7h)",
     audience: [
       "Experts-comptables",
@@ -177,15 +177,15 @@ export const formations: Formation[] = [
     prerequisites:
       "Avoir suivi la formation Niveau 1 ou justifier d'une pratique régulière de ChatGPT",
     objectives: [
-      "Choisir l'IA la plus adaptée selon vos besoins",
-      "Découvrir et maîtriser les nouvelles fonctionnalités avancées",
-      "Appliquer les principes du prompt engineering avancé",
-      "Créer ses propres assistants GPT personnalisés",
+      "Choisir le bon outil IA selon la tâche à réaliser (rédaction, analyse, recherche, automatisation)",
+      "Appliquer 5 techniques avancées de prompt engineering à vos cas métier",
+      "Créer des assistants GPT personnalisés pour votre cabinet",
+      "Sécuriser vos usages IA (anonymisation, travail en local, confidentialité)",
     ],
     modules: [
       {
         number: 1,
-        title: "Introduction — L'adoption de l'IA en chiffres",
+        title: "Introduction - L'adoption de l'IA en chiffres",
         duration: "~30 min",
         topics: [
           "Panorama global de l'adoption de l'IA",
@@ -205,7 +205,7 @@ export const formations: Formation[] = [
       },
       {
         number: 3,
-        title: "Les nouvelles notions (2025 et après)",
+        title: "Les concepts émergents à connaître",
         duration: "~30 min",
         topics: [
           "RLM : Retrieval Language Model",
@@ -218,16 +218,16 @@ export const formations: Formation[] = [
         title: "Le Prompt Engineering : 5 techniques à maîtriser",
         duration: "~60 min",
         topics: [
-          "Chain of Thought — raisonnement étape par étape",
-          "Chain of Verification — auto-vérification des sources",
-          "Self-Refine — production, critique, amélioration",
-          "Program of Thoughts — décomposition en sous-problèmes",
-          "Automatic Prompt Engineer — l'IA optimise ses propres prompts",
+          "Chain of Thought - raisonnement étape par étape",
+          "Chain of Verification - auto-vérification des sources",
+          "Self-Refine - production, critique, amélioration",
+          "Program of Thoughts - décomposition en sous-problèmes",
+          "Automatic Prompt Engineer - l'IA optimise ses propres prompts",
         ],
       },
       {
         number: 5,
-        title: "ChatGPT d'OpenAI — Nouvelles fonctionnalités",
+        title: "ChatGPT d'OpenAI - Nouvelles fonctionnalités",
         duration: "~45 min",
         topics: [
           "Projets et Tâches",
@@ -259,10 +259,10 @@ export const formations: Formation[] = [
       },
     ],
     results: [
-      "Vous savez choisir le bon outil IA pour chaque tâche",
+      "Vous choisissez le bon outil IA selon le type de tâche",
       "Vous maîtrisez 5 techniques avancées de prompt engineering",
-      "Vous créez vos propres assistants GPT personnalisés",
-      "Vous appliquez les meilleures pratiques de sécurité et confidentialité",
+      "Vous créez vos propres assistants GPT personnalisés pour votre cabinet",
+      "Vous sécurisez vos usages IA selon les bonnes pratiques de la profession",
     ],
     pricing: {
       inter: { amount: 400, unit: "€ HT / personne" },
@@ -277,7 +277,7 @@ export const formations: Formation[] = [
     isComingSoon: false,
     badgeLabel: "Perfectionnement",
     seo: {
-      title: "Formation IA Niveau 2 — Prompt engineering avancé et GPTs personnalisés",
+      title: "Formation IA Niveau 2 - Prompt engineering avancé et GPTs | Venissien.ai",
       description:
         "Formation IA avancée : 5 techniques de prompt engineering, création de GPTs sur mesure, outils IA spécialisés. Pour experts-comptables et chefs de mission.",
     },
@@ -285,11 +285,11 @@ export const formations: Formation[] = [
   {
     slug: "niveau-3-transformation-cabinet",
     level: 3,
-    title: "Formation IA Niveau 3 — Transformez votre cabinet avec l'IA",
-    shortTitle: "Niveau 3 — Transformation",
-    subtitle: "Un programme complet pour intégrer l'IA à l'échelle de votre cabinet",
+    title: "Formation IA Niveau 3 - Transformez votre cabinet avec l'intelligence artificielle",
+    shortTitle: "Niveau 3 - Transformation",
+    subtitle: "Un programme d'accompagnement complet pour intégrer l'IA à l'échelle de votre structure",
     description:
-      "Le programme Niveau 3 vous accompagne dans la transformation IA de votre cabinet : gouvernance, formation des équipes, refonte des processus et sélection d'outils.",
+      "Un programme d'accompagnement pour intégrer l'IA à l'échelle de votre cabinet. Gouvernance, formation des équipes, refonte des processus et sélection d'outils.",
     duration: "À définir",
     audience: [
       "Associés et dirigeants de cabinets",
@@ -312,9 +312,9 @@ export const formations: Formation[] = [
     isComingSoon: true,
     badgeLabel: "Transformation",
     seo: {
-      title: "Formation IA Niveau 3 — Transformation digitale cabinet comptable",
+      title: "Formation IA Niveau 3 - Transformation digitale cabinet comptable",
       description:
-        "Programme de transformation IA pour cabinets comptables : gouvernance, processus, outils. Formation inter premium par Vénissien Ducarre.",
+        "Programme de transformation IA pour cabinets comptables : gouvernance, processus, formation des équipes. Accompagnement sur mesure par Vénissien Ducarre.",
     },
   },
 ];

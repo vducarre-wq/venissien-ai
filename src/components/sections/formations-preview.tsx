@@ -19,7 +19,7 @@ export function FormationsPreview() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title="Nos formations"
-          subtitle="Des parcours progressifs conçus par un expert-comptable praticien."
+          subtitle="Trois niveaux progressifs, conçus par un expert-comptable praticien."
         />
 
         <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
