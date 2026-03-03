@@ -73,12 +73,12 @@ export function RotatingText({
         </span>
         <span className="absolute left-0 top-0 whitespace-pre" aria-live="polite">
           {visibleText}
+          <span
+            className="inline-block w-[2px] h-[0.85em] bg-primary align-middle ml-0.5 animate-pulse"
+            aria-hidden="true"
+          />
         </span>
       </span>
-      <span
-        className="inline-block w-[2px] h-[0.85em] bg-primary align-middle ml-0.5 animate-pulse"
-        aria-hidden="true"
-      />
     </span>
   );
 }
