@@ -88,13 +88,18 @@ export function Hero() {
                 </span>{" "}
                 de satisfaction
               </div>
-              <div className="flex items-center gap-2">
+              <a
+                href={siteConfig.stats.googleReviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 hover:text-primary transition-colors"
+              >
                 <IconStar className="size-5 text-yellow-400" aria-hidden="true" />
                 <span className="font-semibold text-foreground">
                   5/5
                 </span>{" "}
                 {siteConfig.stats.googleReviewCount} avis Google
-              </div>
+              </a>
             </div>
           </div>
 

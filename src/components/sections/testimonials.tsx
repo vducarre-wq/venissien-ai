@@ -23,9 +23,14 @@ export function Testimonials() {
               />
             ))}
           </div>
-          <span className="text-sm text-muted-foreground">
+          <a
+            href={siteConfig.stats.googleReviewUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors"
+          >
             {siteConfig.stats.googleReviewCount} avis Google
-          </span>
+          </a>
         </div>
       </div>
 

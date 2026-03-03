@@ -76,6 +76,7 @@ const parcours = [
     title: `${siteConfig.stats.googleReviewCount} avis Google 5 étoiles`,
     description:
       "Des retours authentiques de professionnels qui ont intégré l'IA dans leur quotidien après nos formations.",
+    href: siteConfig.stats.googleReviewUrl,
   },
 ];
 
@@ -115,6 +116,7 @@ const statsItems = [
     icon: IconEcouter,
     value: String(siteConfig.stats.googleReviewCount),
     label: "avis Google",
+    href: siteConfig.stats.googleReviewUrl,
   },
   {
     icon: IconCalendarDays,
@@ -195,7 +197,18 @@ export default function AProposPage() {
                     />
                   </div>
                   <h3 className="font-heading text-lg font-semibold">
-                    {item.title}
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-primary transition-colors"
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
+                      item.title
+                    )}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     {item.description}
@@ -240,23 +253,30 @@ export default function AProposPage() {
       <section className="bg-primary py-14" aria-label="Chiffres clés">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
-            {statsItems.map((stat) => (
-              <div
-                key={stat.label}
-                className="flex flex-col items-center text-center gap-3"
-              >
-                <stat.icon
-                  className="size-8 text-white/80"
-                  aria-hidden="true"
-                />
-                <p className="text-3xl md:text-4xl font-heading font-bold text-white">
-                  {stat.value}
-                </p>
-                <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
-                  {stat.label}
-                </p>
-              </div>
-            ))}
+            {statsItems.map((stat) => {
+              const Wrapper = stat.href ? "a" : "div";
+              const wrapperProps = stat.href
+                ? { href: stat.href, target: "_blank" as const, rel: "noopener noreferrer" }
+                : {};
+              return (
+                <Wrapper
+                  key={stat.label}
+                  {...wrapperProps}
+                  className={`flex flex-col items-center text-center gap-3${stat.href ? " hover:opacity-80 transition-opacity" : ""}`}
+                >
+                  <stat.icon
+                    className="size-8 text-white/80"
+                    aria-hidden="true"
+                  />
+                  <p className="text-3xl md:text-4xl font-heading font-bold text-white">
+                    {stat.value}
+                  </p>
+                  <p className="text-white/80 text-sm uppercase tracking-wider font-medium">
+                    {stat.label}
+                  </p>
+                </Wrapper>
+              );
+            })}
           </div>
         </div>
       </section>
