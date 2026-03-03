@@ -64,8 +64,16 @@ export function RotatingText({
   const visibleText = currentWord.slice(0, displayedChars);
 
   return (
-    <span className={className}>
-      {visibleText}
+    <span className={`inline-block ${className}`}>
+      {/* Invisible full word to maintain stable width (prevents reflow) */}
+      <span className="relative inline-block">
+        <span aria-hidden="true" className="invisible whitespace-pre">
+          {currentWord}
+        </span>
+        <span className="absolute left-0 top-0 whitespace-pre" aria-live="polite">
+          {visibleText}
+        </span>
+      </span>
       <span
         className="inline-block w-[2px] h-[0.85em] bg-primary align-middle ml-0.5 animate-pulse"
         aria-hidden="true"

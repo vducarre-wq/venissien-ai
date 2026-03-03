@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -15,13 +15,30 @@ export function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  /* ---- Scroll detection ---- */
+  /* ---- Scroll detection (optimised with rAF + ref guard) ---- */
+  const scrolledRef = useRef(false);
+  const rafRef = useRef<number | null>(null);
+
+  const handleScroll = useCallback(() => {
+    if (rafRef.current !== null) return; // already scheduled
+    rafRef.current = requestAnimationFrame(() => {
+      const isScrolled = window.scrollY > 10;
+      if (isScrolled !== scrolledRef.current) {
+        scrolledRef.current = isScrolled;
+        setScrolled(isScrolled);
+      }
+      rafRef.current = null;
+    });
+  }, []);
+
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 10);
     handleScroll(); // check on mount
     window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
+    };
+  }, [handleScroll]);
 
   /* ---- Lock body scroll when mobile menu is open ---- */
   useEffect(() => {

@@ -110,6 +110,8 @@
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 /* Testimonial carousel animation */
@@ -120,11 +122,18 @@
 
 .animate-testimonial-scroll {
   animation: testimonial-scroll 120s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 /* AUM Conseil card shadow (violet-tinted) */
 .card-shadow {
   box-shadow: 0 4px 24px rgba(107, 107, 255, 0.08);
+}
+
+.card-shadow-hover {
+  will-change: transform, box-shadow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-shadow-hover:hover {
@@ -137,6 +146,7 @@
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: opacity, transform;
 }
 
 .animate-on-scroll.visible {
