@@ -19,6 +19,7 @@ export function RotatingText({
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const currentWord = words[currentIndex];
+  const longestWord = words.reduce((a, b) => (a.length >= b.length ? a : b), "");
   const charSpeed = 35;
 
   useEffect(() => {
@@ -68,7 +69,7 @@ export function RotatingText({
       {/* Invisible full word to maintain stable width (prevents reflow) */}
       <span className="relative inline-block">
         <span aria-hidden="true" className="invisible whitespace-pre">
-          {currentWord}
+          {longestWord}
         </span>
         <span className="absolute left-0 top-0 whitespace-pre" aria-live="polite">
           {visibleText}

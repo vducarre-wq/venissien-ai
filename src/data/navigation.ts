@@ -16,6 +16,7 @@ export const mainNavigation: NavItem[] = [
       { label: "Atelier Dashboard FEC", href: "/formations/atelier-dashboard-fec" },
     ],
   },
+  { label: "Blog", href: "/blog" },
   { label: "À propos", href: "/a-propos" },
   { label: "Contact", href: "/contact" },
 ];
@@ -29,6 +30,7 @@ export const footerNavigation = {
     { label: "Atelier Dashboard FEC", href: "/formations/atelier-dashboard-fec" },
   ],
   company: [
+    { label: "Blog", href: "/blog" },
     { label: "À propos", href: "/a-propos" },
     { label: "Contact", href: "/contact" },
   ],
