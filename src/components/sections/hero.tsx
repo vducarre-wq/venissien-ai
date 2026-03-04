@@ -29,7 +29,7 @@ export function Hero() {
           {/* Left content */}
           <div className="flex flex-col gap-6 overflow-hidden">
             <h1 className="text-3xl sm:text-4xl lg:text-[52px] font-extrabold leading-tight text-foreground">
-              Formation IA générative pour{" "}
+              Conseils & Formations IA pour{" "}
               <RotatingText
                 words={rotatingWords}
                 className="text-primary"
@@ -42,12 +42,12 @@ export function Hero() {
             </p>
 
             {/* Badges */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               {badges.map((label, index) => {
                 const Icon = badgeIcons[index];
                 return (
-                  <Badge key={label} variant="secondary" className="text-sm px-3 py-1">
-                    <Icon className="size-4 text-primary" aria-hidden="true" />
+                  <Badge key={label} variant="secondary" className="text-base px-4 py-2">
+                    <Icon className="size-5 text-primary" aria-hidden="true" />
                     {label}
                   </Badge>
                 );
