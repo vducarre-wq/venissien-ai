@@ -30,6 +30,7 @@ import {
   IconEcouter,
   IconSuivre,
   IconKing,
+  IconSmile,
 } from "@/components/icons";
 
 /* ------------------------------------------------------------------ */
@@ -240,9 +241,9 @@ export default function AtelierDashboardFecPage() {
               },
               {
                 icon: IconCash,
-                title: "Des comptes annuels sous-valorisés",
+                title: "Des livrables sous-exploités",
                 description:
-                  "Les comptes annuels produits par le cabinet sont le produit fini délivré au client. Ils méritent d'être visualisés clairement pour vos clients, pas enfouis dans un PDF illisible.",
+                  "Vos comptes annuels sont le produit fini de votre travail. Pourtant, vos clients les reçoivent dans un PDF qu'ils ne lisent pas.",
               },
             ].map((item) => (
               <Card key={item.title} className="rounded-2xl card-shadow text-center">
@@ -303,6 +304,12 @@ export default function AtelierDashboardFecPage() {
                 title: "Répartition du CA",
                 description:
                   "Visualisation par compte de TVA ou par activité en graphique circulaire.",
+              },
+              {
+                icon: IconSmile,
+                title: "Des clients satisfaits",
+                description:
+                  "Un livrable visuel et professionnel qui valorise votre travail et renforce la relation client.",
               },
             ].map((feature) => (
               <Card key={feature.title} className="rounded-2xl card-shadow">
