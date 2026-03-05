@@ -3,10 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site-config";
 import { faqByPage } from "@/data/faq";
-import { testimonials } from "@/data/testimonials";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FaqSection } from "@/components/shared/faq-section";
-import { TestimonialCard } from "@/components/shared/testimonial-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -149,7 +147,7 @@ const guarantees = [
 /* ------------------------------------------------------------------ */
 export default function AtelierDashboardFecPage() {
   const faqItems = faqByPage["atelier-dashboard-fec"] || [];
-  const featuredTestimonials = testimonials.filter((t) => t.featured).slice(0, 3);
+
 
   return (
     <>
@@ -503,23 +501,6 @@ export default function AtelierDashboardFecPage() {
                 </Button>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================ */}
-      {/* TÉMOIGNAGES                                                   */}
-      {/* ============================================================ */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="Ce que disent nos participants"
-            subtitle={`+${siteConfig.stats.respondentCount} professionnels ont évalué nos formations`}
-          />
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredTestimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.id} testimonial={testimonial} />
-            ))}
           </div>
         </div>
       </section>
