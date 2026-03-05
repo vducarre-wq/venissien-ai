@@ -39,9 +39,9 @@ export const metadata: Metadata = {
   title:
     "Atelier Dashboard FEC avec Claude - Tableau de bord interactif en 2h | Venissien.ai",
   description:
-    "Transformez vos FEC en dashboard interactif en 2h. Atelier live le 12 mars 2026 par Vénissien Ducarre, expert-comptable. 100 % en local, zéro code. +500 professionnels formés.",
+    "Transformez vos FEC en dashboard interactif en 2h. Atelier live le 17 mars 2026 par Vénissien Ducarre, expert-comptable. 100 % en local, zéro code. +500 professionnels formés.",
   openGraph: {
-    title: "Atelier Dashboard FEC avec Claude - 12 mars 2026",
+    title: "Atelier Dashboard FEC avec Claude - 17 mars 2026",
     description:
       "Créez un tableau de bord interactif à partir de vos FEC en 2 heures. Atelier live animé par un expert-comptable praticien.",
     url: "https://venissien.ai/formations/atelier-dashboard-fec",
@@ -52,8 +52,7 @@ export const metadata: Metadata = {
 /* ------------------------------------------------------------------ */
 /*  Liens de paiement (Stripe Payment Links à remplacer)               */
 /* ------------------------------------------------------------------ */
-const PAYMENT_LINK_199 = "#pricing";
-const PAYMENT_LINK_449 = "#pricing";
+const PAYMENT_LINK_199 = "https://buy.stripe.com/cNi9AT8umf2c3WP0Xeak000";
 
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
@@ -115,20 +114,13 @@ const programBlocs = [
 ];
 
 const deliverables199 = [
-  "Accès au live du 12 mars (17h30–19h30)",
+  "Accès au live du 17 mars (17h30–19h30)",
   "Replay intégral sous 48h",
   "Support écrit complet (démarche + prompts structurés)",
   "FEC anonymisé d'exemple",
   "Session Q&A en direct",
 ];
 
-const deliverables449 = [
-  "Tout le contenu de l'offre Live + Replay",
-  "Dashboard HTML prêt à l'emploi (glisser-déposer votre FEC)",
-  "Guide de déploiement vidéo (10 min)",
-  "Documentation technique complète",
-  "Mises à jour futures du template",
-];
 
 const guarantees = [
   {
@@ -141,19 +133,13 @@ const guarantees = [
     icon: IconTime,
     title: "Replay inclus",
     description:
-      "Pas disponible le 12 mars ? Le replay complet + supports écrits sont envoyés sous 48h.",
+      "Pas disponible le 17 mars ? Le replay complet + supports écrits sont envoyés sous 48h.",
   },
   {
     icon: IconAction,
     title: "Zéro code requis",
     description:
       "Tout est montré en partage d'écran, étape par étape. Aucune compétence technique nécessaire.",
-  },
-  {
-    icon: IconCash,
-    title: "Éligible OPCO",
-    description:
-      "Convention de formation disponible pour une prise en charge au titre de la formation professionnelle.",
   },
 ];
 
@@ -177,19 +163,18 @@ export default function AtelierDashboardFecPage() {
               className="mb-6 text-sm px-4 py-1.5 inline-flex items-center gap-1.5"
             >
               <IconCalendar className="size-3.5" />
-              Jeudi 12 mars 2026 - 17h30 à 19h30
+              Mardi 17 mars 2026 - 17h30 à 19h30
             </Badge>
 
             <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-extrabold leading-tight text-foreground tracking-tight">
-              Transformez vos FEC en{" "}
-              <span className="text-primary">dashboard interactif</span> en 2
-              heures
+              Construisez votre outil de{" "}
+              <span className="text-primary">data-visualisation</span> avec
+              Claude
             </h1>
 
             <p className="mt-6 text-lg lg:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto">
-              Atelier live : je partage mon écran et je construis un tableau de
-              bord complet devant vous, depuis un FEC brut. Vous repartez avec la
-              méthode et l&apos;outil.
+              L&apos;atelier pas-à-pas pour créer des dashboards interactifs à
+              partir d&apos;un FEC, sans coder, avec l&apos;IA comme seul outil.
             </p>
 
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
@@ -198,9 +183,9 @@ export default function AtelierDashboardFecPage() {
                 size="lg"
                 className="rounded-lg px-8 py-4 font-bold text-base"
               >
-                <a href="#pricing">
+                <a href={PAYMENT_LINK_199}>
                   <IconArrowRight className="size-4" />
-                  Accéder à l&apos;atelier - à partir de 199 € HT
+                  Accéder à l&apos;atelier - 199 € HT
                 </a>
               </Button>
             </div>
@@ -216,14 +201,14 @@ export default function AtelierDashboardFecPage() {
               <div className="flex items-center gap-2">
                 <IconKing className="size-5 text-primary" aria-hidden="true" />
                 <span className="font-semibold text-foreground">
-                  {siteConfig.stats.satisfactionScore}/{siteConfig.stats.satisfactionMax}
+                  {siteConfig.stats.googleReviewScore}/{siteConfig.stats.googleReviewMax}
                 </span>{" "}
-                de satisfaction
+                avis Google
               </div>
               <div className="flex items-center gap-2">
                 <IconTime className="size-5 text-primary" aria-hidden="true" />
                 <span className="font-semibold text-foreground">2h</span> en
-                direct sur Google Meet
+                direct
               </div>
             </div>
           </div>
@@ -237,7 +222,7 @@ export default function AtelierDashboardFecPage() {
         <div className="container mx-auto px-4 max-w-5xl">
           <SectionHeader
             title="Le problème que vous connaissez"
-            subtitle="Chaque année, les mêmes frustrations en période fiscale"
+            subtitle="Dans tous les cabinets, les mêmes frustrations"
           />
           <div className="mt-12 grid sm:grid-cols-3 gap-8">
             {[
@@ -255,9 +240,9 @@ export default function AtelierDashboardFecPage() {
               },
               {
                 icon: IconCash,
-                title: "Du temps non facturé",
+                title: "Des comptes annuels sous-valorisés",
                 description:
-                  "Ce travail de présentation n'est pas valorisé. Avec 20, 40 ou 68 clients, ça représente des dizaines d'heures perdues.",
+                  "Les comptes annuels produits par le cabinet sont le produit fini délivré au client. Ils méritent d'être visualisés clairement pour vos clients, pas enfouis dans un PDF illisible.",
               },
             ].map((item) => (
               <Card key={item.title} className="rounded-2xl card-shadow text-center">
@@ -319,12 +304,6 @@ export default function AtelierDashboardFecPage() {
                 description:
                   "Visualisation par compte de TVA ou par activité en graphique circulaire.",
               },
-              {
-                icon: IconPartager,
-                title: "Export PDF",
-                description:
-                  "Impression en A4 paysage, optimisée pour vos rendez-vous bilan. Un clic.",
-              },
             ].map((feature) => (
               <Card key={feature.title} className="rounded-2xl card-shadow">
                 <CardContent className="flex items-start gap-4">
@@ -350,7 +329,7 @@ export default function AtelierDashboardFecPage() {
               size="lg"
               className="rounded-lg px-8 py-4 font-bold text-base"
             >
-              <a href="#pricing">
+              <a href={PAYMENT_LINK_199}>
                 Je veux ce dashboard
                 <IconArrowRight className="size-4 ml-2" />
               </a>
@@ -416,7 +395,7 @@ export default function AtelierDashboardFecPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <SectionHeader
             title={"Programme de l'atelier (2h)"}
-            subtitle="Jeudi 12 mars 2026, de 17h30 à 19h30 sur Google Meet"
+            subtitle="Mardi 17 mars 2026, de 17h30 à 19h30"
           />
           <div className="mt-12">
             <Accordion type="single" collapsible className="w-full">
@@ -457,7 +436,7 @@ export default function AtelierDashboardFecPage() {
       {/* ============================================================ */}
       <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-3 gap-6">
             {guarantees.map((item) => (
               <div key={item.title} className="text-center">
                 <div className="flex size-12 mx-auto items-center justify-center rounded-xl bg-primary/10 text-primary">
@@ -504,9 +483,9 @@ export default function AtelierDashboardFecPage() {
                 clients). Il utilise Claude au quotidien pour ses missions et a
                 développé ce dashboard pour ses propres rendez-vous bilan. Plus
                 de {siteConfig.stats.professionalsTrainedCount} professionnels
-                formés depuis 2023 avec une note de satisfaction de{" "}
-                {siteConfig.stats.satisfactionScore}/
-                {siteConfig.stats.satisfactionMax}.
+                formés depuis 2023 avec une note de{" "}
+                {siteConfig.stats.googleReviewScore}/
+                {siteConfig.stats.googleReviewMax} sur Google.
               </p>
               <div className="mt-4">
                 <Button asChild variant="outline" size="sm">
@@ -542,23 +521,22 @@ export default function AtelierDashboardFecPage() {
       {/* PRICING                                                       */}
       {/* ============================================================ */}
       <section id="pricing" className="py-16 lg:py-24 bg-bg-alt scroll-mt-20">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-xl">
           <SectionHeader
-            title="Choisissez votre formule"
+            title="L'offre"
             subtitle="Paiement unique - accès à vie au replay et aux supports"
           />
-          <div className="mt-12 grid md:grid-cols-2 gap-8 items-start">
-            {/* Offre 1 : Live + Replay */}
-            <Card className="rounded-2xl card-shadow relative overflow-hidden">
+          <div className="mt-12">
+            <Card className="rounded-2xl card-shadow relative overflow-hidden ring-2 ring-primary">
               <CardContent className="pt-8">
                 <Badge variant="secondary" className="mb-4 text-xs">
-                  Comprendre et construire
+                  Live + Replay
                 </Badge>
                 <h3 className="font-heading text-2xl font-bold">
-                  Live + Replay
+                  Atelier Dashboard FEC
                 </h3>
                 <div className="mt-4 flex items-baseline gap-2">
-                  <span className="text-4xl font-extrabold text-foreground">
+                  <span className="text-4xl font-extrabold text-primary">
                     199 €
                   </span>
                   <span className="text-muted-foreground text-sm">HT</span>
@@ -584,69 +562,11 @@ export default function AtelierDashboardFecPage() {
                 <div className="mt-6">
                   <Button
                     asChild
-                    variant="outline"
-                    size="lg"
-                    className="w-full rounded-lg border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold"
-                  >
-                    <a href={PAYMENT_LINK_199}>
-                      Accéder à l&apos;atelier - 199 € HT
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Offre 2 : Live + Outil clé en main */}
-            <Card className="rounded-2xl card-shadow relative overflow-hidden ring-2 ring-primary">
-              <div className="bg-primary text-white text-center text-xs font-bold py-2 tracking-wide uppercase flex items-center justify-center gap-2">
-                <IconKing className="size-4" />
-                Outil clé en main
-              </div>
-              <CardContent className="pt-6">
-                <Badge variant="secondary" className="mb-4 text-xs">
-                  Résultat immédiat
-                </Badge>
-                <h3 className="font-heading text-2xl font-bold">
-                  Live + Outil clé en main
-                </h3>
-                <div className="mt-4 flex items-baseline gap-2">
-                  <span className="text-4xl font-extrabold text-primary">
-                    449 €
-                  </span>
-                  <span className="text-muted-foreground text-sm">HT</span>
-                </div>
-                <p className="mt-1 text-sm text-muted-foreground">
-                  Paiement unique
-                </p>
-
-                <ul className="mt-6 space-y-3">
-                  {deliverables449.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm">
-                      <IconCheckCircle className="size-4 shrink-0 text-success mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="mt-4 rounded-lg bg-green-50 border border-green-200 px-4 py-3">
-                  <p className="text-xs font-semibold text-green-800 flex items-center gap-1.5">
-                    <IconCheckCircle className="size-3.5 text-green-600" />
-                    100 % en local - aucune fuite de données clients
-                  </p>
-                  <p className="mt-1 text-xs text-green-700">
-                    Le dashboard fonctionne dans votre navigateur, sans serveur
-                    externe. Aucun abonnement requis.
-                  </p>
-                </div>
-
-                <div className="mt-6">
-                  <Button
-                    asChild
                     size="lg"
                     className="w-full rounded-lg font-bold"
                   >
-                    <a href={PAYMENT_LINK_449}>
-                      Accéder à l&apos;atelier + outil - 449 € HT
+                    <a href={PAYMENT_LINK_199}>
+                      Accéder à l&apos;atelier - 199 € HT
                       <IconArrowRight className="size-4 ml-2" />
                     </a>
                   </Button>
@@ -678,7 +598,7 @@ export default function AtelierDashboardFecPage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight max-w-3xl mx-auto">
             {"FEC → Dashboard en 2 heures."}
             <br />
-            <span className="text-white/80">12 mars 2026 - 17h30.</span>
+            <span className="text-white/80">17 mars 2026 - 17h30.</span>
           </h2>
           <p className="mt-5 text-lg text-white/80 max-w-xl mx-auto leading-relaxed">
             Rejoignez l&apos;atelier et transformez la façon dont vous présentez
@@ -691,8 +611,8 @@ export default function AtelierDashboardFecPage() {
               size="lg"
               className="bg-white !text-primary font-bold rounded-lg hover:bg-gray-100 px-8 py-4"
             >
-              <a href="#pricing">
-                Accéder à l&apos;atelier - à partir de 199 € HT
+              <a href={PAYMENT_LINK_199}>
+                Accéder à l&apos;atelier - 199 € HT
               </a>
             </Button>
             <Button
@@ -722,8 +642,8 @@ export default function AtelierDashboardFecPage() {
             name: "Atelier Dashboard FEC avec Claude",
             description:
               "Transformez vos FEC en dashboard interactif en 2 heures. Atelier live animé par Vénissien Ducarre, expert-comptable.",
-            startDate: "2026-03-12T17:30:00+01:00",
-            endDate: "2026-03-12T19:30:00+01:00",
+            startDate: "2026-03-17T17:30:00+01:00",
+            endDate: "2026-03-17T19:30:00+01:00",
             eventAttendanceMode:
               "https://schema.org/OnlineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",
@@ -741,24 +661,14 @@ export default function AtelierDashboardFecPage() {
               name: "Vénissien Ducarre",
               jobTitle: "Expert-Comptable & Formateur IA",
             },
-            offers: [
-              {
-                "@type": "Offer",
-                name: "Live + Replay",
-                price: "199",
-                priceCurrency: "EUR",
-                availability: "https://schema.org/InStock",
-                url: "https://venissien.ai/formations/atelier-dashboard-fec#pricing",
-              },
-              {
-                "@type": "Offer",
-                name: "Live + Outil clé en main",
-                price: "449",
-                priceCurrency: "EUR",
-                availability: "https://schema.org/InStock",
-                url: "https://venissien.ai/formations/atelier-dashboard-fec#pricing",
-              },
-            ],
+            offers: {
+              "@type": "Offer",
+              name: "Atelier Dashboard FEC - Live + Replay",
+              price: "199",
+              priceCurrency: "EUR",
+              availability: "https://schema.org/InStock",
+              url: "https://venissien.ai/formations/atelier-dashboard-fec#pricing",
+            },
           }),
         }}
       />

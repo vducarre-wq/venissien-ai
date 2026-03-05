@@ -72,7 +72,7 @@ export const faqByPage: Record<string, FaqItem[]> = {
     {
       question: "Ai-je besoin d'un abonnement Claude Pro ?",
       answer:
-        "Pour l'offre à 199 \u20AC (Live + Replay), oui : un abonnement Claude Pro (20 $/mois) est nécessaire pour reproduire le dashboard. Pour l'offre à 449 \u20AC (Outil clé en main), non : le dashboard HTML fonctionne sans aucun abonnement, dans un simple navigateur.",
+        "Oui, un abonnement Claude Pro (20 $/mois) est nécessaire pour reproduire le dashboard de votre côté. Cet abonnement vous donne accès à toutes les fonctionnalités utilisées pendant l'atelier.",
     },
     {
       question: "Mes données clients sont-elles en sécurité ?",
@@ -82,27 +82,22 @@ export const faqByPage: Record<string, FaqItem[]> = {
     {
       question: "Mon logiciel comptable fait déjà des tableaux de bord, pourquoi cet atelier ?",
       answer:
-        "Aucun logiciel métier ne produit un dashboard interactif personnalisé en 5 minutes à partir d'un FEC brut. Ce dashboard est complémentaire : il vous donne une visualisation immédiate pour vos rendez-vous bilan, sans configuration préalable.",
+        "Aucun logiciel métier ne produit un dashboard interactif personnalisé en 5 minutes à partir d'un FEC brut. Ce dashboard est complémentaire : il vous donne une visualisation claire de vos comptes annuels pour vos rendez-vous bilan, sans configuration préalable.",
     },
     {
       question: "2 heures, c'est suffisant ?",
       answer:
-        "Oui. Le replay intégral et le support écrit complet sont inclus dans les deux offres. Avec l'offre à 449 \u20AC, vous recevez en plus l'outil fini, prêt à l'emploi : pas besoin de tout retenir.",
+        "Oui. Le replay intégral et le support écrit complet sont inclus. Vous pouvez revoir l'atelier à votre rythme autant de fois que nécessaire.",
     },
     {
-      question: "199 \u20AC ou 449 \u20AC pour un atelier en ligne, est-ce le juste prix ?",
+      question: "199 € pour un atelier en ligne, est-ce le juste prix ?",
       answer:
-        "Ce n'est pas un webinaire : c'est un atelier avec un livrable concret que vous utiliserez dès le lendemain avec vos clients. L'offre à 449 \u20AC vous fait économiser plusieurs heures de configuration, amorties dès le premier client analysé.",
+        "Ce n'est pas un webinaire : c'est un atelier avec un livrable concret que vous utiliserez dès le lendemain avec vos clients. Le temps gagné sur la préparation de vos rendez-vous bilan est amorti dès le premier client analysé.",
     },
     {
-      question: "Je ne suis pas disponible le 12 mars, puis-je quand même en profiter ?",
+      question: "Je ne suis pas disponible le 17 mars, puis-je quand même en profiter ?",
       answer:
         "Oui. Le replay complet est envoyé sous 48h à tous les participants. Vous pourrez suivre l'atelier à votre rythme avec tous les supports écrits.",
-    },
-    {
-      question: "L'atelier est-il éligible à la formation professionnelle ?",
-      answer:
-        "Oui, une convention de formation peut être établie pour une prise en charge OPCO. Contactez-nous pour les modalités.",
     },
   ],
   "niveau-2": [

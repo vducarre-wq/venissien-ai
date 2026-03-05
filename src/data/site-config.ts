@@ -17,6 +17,8 @@ export const siteConfig = {
     satisfactionScore: 4.84,
     satisfactionMax: 5,
     respondentCount: 115,
+    googleReviewScore: 5,
+    googleReviewMax: 5,
     googleReviewCount: 29,
     googleReviewUrl:
       "https://www.google.com/search?sa=X&sca_esv=73000156de4ea350&rlz=1C5CHFA_enFR1102FR1102&sxsrf=ANbL-n4MWJUM7E2OUfs4ada4k4rX3FbWnQ:1772554051910&q=venissien.ai+Avis&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDW3NDczNDE3NjS2MDSxtDSyMNrAyPiKUbAsNS-zuDgzNU8vMVPBsSyzeBErphgAb5PCT0MAAAA&rldimm=15797614731381499282&tbm=lcl&hl=fr-FR&ved=2ahUKEwjZ0O-0joSTAxU6UaQEHc_AAXwQ9fQKegQILhAG&biw=1920&bih=929&dpr=2#lkt=LocalPoiReviews",
