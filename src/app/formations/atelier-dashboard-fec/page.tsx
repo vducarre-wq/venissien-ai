@@ -184,7 +184,7 @@ export default function AtelierDashboardFecPage() {
               >
                 <a href={PAYMENT_LINK_199}>
                   <IconArrowRight className="size-4" />
-                  Réserver ma place - 199 € HT
+                  Réserver ma place
                 </a>
               </Button>
             </div>
@@ -554,7 +554,7 @@ export default function AtelierDashboardFecPage() {
                     className="w-full rounded-lg font-bold"
                   >
                     <a href={PAYMENT_LINK_199}>
-                      Réserver ma place - 199 € HT
+                      Réserver ma place
                       <IconArrowRight className="size-4 ml-2" />
                     </a>
                   </Button>
@@ -600,7 +600,7 @@ export default function AtelierDashboardFecPage() {
               className="bg-white !text-primary font-bold rounded-lg hover:bg-gray-100 px-8 py-4"
             >
               <a href={PAYMENT_LINK_199}>
-                Réserver ma place - 199 € HT
+                Réserver ma place
               </a>
             </Button>
             <Button
