@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 /* ------------------------------------------------------------------ */
 /*  Liens de paiement (Stripe Payment Links à remplacer)               */
 /* ------------------------------------------------------------------ */
-const PAYMENT_LINK_199 = "https://buy.stripe.com/cNi9AT8umf2c3WP0Xeak000";
+const PAYMENT_LINK_199 = "https://tally.so/r/gDADjl";
 
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
@@ -184,7 +184,7 @@ export default function AtelierDashboardFecPage() {
               >
                 <a href={PAYMENT_LINK_199}>
                   <IconArrowRight className="size-4" />
-                  Accéder à l&apos;atelier - 199 € HT
+                  Réserver ma place - 199 € HT
                 </a>
               </Button>
             </div>
@@ -335,7 +335,7 @@ export default function AtelierDashboardFecPage() {
               className="rounded-lg px-8 py-4 font-bold text-base"
             >
               <a href={PAYMENT_LINK_199}>
-                Je veux ce dashboard
+                S&apos;inscrire à l&apos;atelier
                 <IconArrowRight className="size-4 ml-2" />
               </a>
             </Button>
@@ -554,7 +554,7 @@ export default function AtelierDashboardFecPage() {
                     className="w-full rounded-lg font-bold"
                   >
                     <a href={PAYMENT_LINK_199}>
-                      Accéder à l&apos;atelier - 199 € HT
+                      Réserver ma place - 199 € HT
                       <IconArrowRight className="size-4 ml-2" />
                     </a>
                   </Button>
@@ -600,14 +600,14 @@ export default function AtelierDashboardFecPage() {
               className="bg-white !text-primary font-bold rounded-lg hover:bg-gray-100 px-8 py-4"
             >
               <a href={PAYMENT_LINK_199}>
-                Accéder à l&apos;atelier - 199 € HT
+                Réserver ma place - 199 € HT
               </a>
             </Button>
             <Button
               asChild
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white rounded-lg hover:bg-white/10 px-8 py-3.5 font-semibold"
+              className="border-2 border-white !text-white !bg-transparent rounded-lg hover:!bg-white/10 px-8 py-3.5 font-semibold"
             >
               <Link href="/contact">
                 Une question ? Contactez-nous
