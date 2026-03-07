@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 /* ------------------------------------------------------------------ */
 /*  Liens de paiement (Stripe Payment Links à remplacer)               */
 /* ------------------------------------------------------------------ */
-const PAYMENT_LINK_199 = "https://tally.so/r/gDADjl";
+const PAYMENT_LINK_199 = "https://buy.stripe.com/cNi9AT8umf2c3WP0Xeak000";
 
 /* ------------------------------------------------------------------ */
 /*  Data                                                               */
