@@ -55,6 +55,7 @@ export async function generateMetadata({
   return {
     title: formation.seo.title,
     description: formation.seo.description,
+    alternates: { canonical: `/formations/${slug}` },
   };
 }
 

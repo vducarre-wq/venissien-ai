@@ -9,9 +9,10 @@ import { IconArrowRight, IconTime } from "@/components/icons";
 import { JsonLd } from "@/components/shared/json-ld";
 
 export const metadata: Metadata = {
-  title: "Blog – Vision & décryptage IA | Venissien.ai",
+  title: "Blog – Vision & décryptage IA",
   description:
     "Articles, analyses et points de vue de Vénissien Ducarre sur l'IA générative appliquée aux métiers du chiffre et du droit. Décryptage, retours d'expérience et convictions.",
+  alternates: { canonical: "/blog" },
 };
 
 const blogJsonLd = {

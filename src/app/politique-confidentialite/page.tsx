@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Politique de confidentialité",
   description:
     "Politique de confidentialité et protection des données personnelles - venissien.ai",
+  alternates: { canonical: "/politique-confidentialite" },
 };
 
 export default function PolitiqueConfidentialitePage() {

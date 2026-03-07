@@ -8,7 +8,7 @@ module.exports = {
       { userAgent: "*", disallow: ["/api/"] },
     ],
   },
-  exclude: ["/api/*"],
+  exclude: ["/api/*", "/blog/article-*", "/formations/ateliers-live"],
   changefreq: "weekly",
   priority: 0.7,
   additionalPaths: async () => {

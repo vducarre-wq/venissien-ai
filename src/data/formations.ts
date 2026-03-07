@@ -154,7 +154,7 @@ export const formations: Formation[] = [
     isComingSoon: false,
     badgeLabel: "Initiation",
     seo: {
-      title: "Formation IA Niveau 1 - Maîtrisez ChatGPT en cabinet | Venissien.ai",
+      title: "Formation IA Niveau 1 - Maîtrisez ChatGPT en cabinet",
       description:
         "Formation IA d'une journée pour experts-comptables et avocats. Maîtrisez ChatGPT, le prompt engineering et les cas d'usage métier. +500 professionnels formés.",
     },
@@ -277,7 +277,7 @@ export const formations: Formation[] = [
     isComingSoon: false,
     badgeLabel: "Perfectionnement",
     seo: {
-      title: "Formation IA Niveau 2 - Prompt engineering avancé et GPTs | Venissien.ai",
+      title: "Formation IA Niveau 2 - Prompt engineering avancé et GPTs",
       description:
         "Formation IA avancée : 5 techniques de prompt engineering, création de GPTs sur mesure, outils IA spécialisés. Pour experts-comptables et chefs de mission.",
     },

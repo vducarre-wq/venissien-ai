@@ -36,9 +36,10 @@ import {
 /* ------------------------------------------------------------------ */
 export const metadata: Metadata = {
   title:
-    "Atelier Dashboard FEC avec Claude - Tableau de bord interactif en 2h | Venissien.ai",
+    "Atelier Dashboard FEC avec Claude - Tableau de bord interactif en 2h",
   description:
     "Transformez vos FEC en dashboard interactif en 2h. Atelier live le 17 mars 2026 par Vénissien Ducarre, expert-comptable. 100 % en local, zéro code. +500 professionnels formés.",
+  alternates: { canonical: "/formations/atelier-dashboard-fec" },
   openGraph: {
     title: "Atelier Dashboard FEC avec Claude - 17 mars 2026",
     description:

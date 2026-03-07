@@ -17,9 +17,10 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { siteConfig } from "@/data/site-config";
 
 export const metadata: Metadata = {
-  title: "Contact - Formation IA pour experts-comptables | Venissien.ai",
+  title: "Contact - Formation IA pour experts-comptables",
   description:
     "Une question sur nos formations IA ? Un projet de formation intra ? Contactez-nous. Réponse sous 24h. Appel découverte gratuit de 15 minutes.",
+  alternates: { canonical: "/contact" },
 };
 
 const contactPageJsonLd = {

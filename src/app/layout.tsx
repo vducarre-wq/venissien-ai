@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/images/hero-group.png",
+        url: "/images/hero-group.jpg",
         width: 1200,
         height: 630,
         alt: "Venissien.ai - Formation IA Générative",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Venissien.ai - Formation IA pour Experts-Comptables et Avocats",
     description: siteConfig.description,
-    images: ["/images/hero-group.png"],
+    images: ["/images/hero-group.jpg"],
   },
   robots: {
     index: true,

@@ -11,9 +11,10 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { IconTime, IconPartager, IconArrowRight, IconMagic } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Formations IA pour cabinets comptables et avocats | Venissien.ai",
+  title: "Formations IA pour cabinets comptables et avocats",
   description:
     "3 niveaux de formation IA : initiation ChatGPT, prompt engineering avancé, transformation cabinet. Par un expert-comptable praticien. Réservez votre place.",
+  alternates: { canonical: "/formations" },
 };
 
 const coursesJsonLd = {

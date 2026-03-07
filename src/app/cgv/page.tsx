@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Conditions Générales de Vente",
   description:
     "CGV des formations IA - AUM Conseil / venissien.ai",
+  alternates: { canonical: "/cgv" },
 };
 
 export default function CGVPage() {

@@ -19,9 +19,10 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
-  title: "Conférences IA pour experts-comptables et avocats | Venissien.ai",
+  title: "Conférences IA pour experts-comptables et avocats",
   description:
     "Interventions et conférences sur l'IA générative pour vos événements professionnels. Par Vénissien Ducarre, expert-comptable et formateur IA. Demandez un devis.",
+  alternates: { canonical: "/formations/conferences" },
 };
 
 const themes = [

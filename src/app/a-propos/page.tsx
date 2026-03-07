@@ -20,9 +20,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { siteConfig } from "@/data/site-config";
 
 export const metadata: Metadata = {
-  title: "Vénissien Ducarre - Expert-comptable et formateur IA | Venissien.ai",
+  title: "Vénissien Ducarre - Expert-comptable et formateur IA",
   description:
     "Expert-comptable inscrit à l'Ordre, fondateur d'AUM Conseil, formateur IA. +500 professionnels formés depuis 2023. Découvrez son parcours et son approche.",
+  alternates: { canonical: "/a-propos" },
 };
 
 const personJsonLd = {

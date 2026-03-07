@@ -6,6 +6,7 @@ import { siteConfig } from "@/data/site-config";
 export const metadata: Metadata = {
   title: "Mentions légales",
   description: "Mentions légales du site venissien.ai - AUM Conseil.",
+  alternates: { canonical: "/mentions-legales" },
 };
 
 export default function MentionsLegalesPage() {
