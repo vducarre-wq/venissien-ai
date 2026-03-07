@@ -30,7 +30,18 @@ module.exports = {
         priority: 0.7,
         changefreq: "monthly",
       },
+      {
+        loc: "/formations/atelier-dashboard-fec",
+        priority: 0.9,
+        changefreq: "weekly",
+      },
+      {
+        loc: "/formations/conferences",
+        priority: 0.7,
+        changefreq: "monthly",
+      },
       { loc: "/a-propos", priority: 0.7, changefreq: "monthly" },
+      { loc: "/blog", priority: 0.8, changefreq: "weekly" },
       { loc: "/contact", priority: 0.8, changefreq: "monthly" },
     ];
   },

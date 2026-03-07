@@ -6,8 +6,6 @@ import { siteConfig } from "@/data/site-config";
 import { Star } from "lucide-react";
 
 export function Testimonials() {
-  const duplicated = [...testimonials, ...testimonials];
-
   return (
     <section className="py-16 lg:py-24 bg-bg-alt overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10">
@@ -41,12 +39,21 @@ export function Testimonials() {
 
         {/* Scrolling track */}
         <div className="flex gap-6 animate-testimonial-scroll hover:[animation-play-state:paused] w-max">
-          {duplicated.map((testimonial, index) => (
+          {testimonials.map((testimonial) => (
             <TestimonialCard
-              key={`${testimonial.id}-${index}`}
+              key={testimonial.id}
               testimonial={testimonial}
             />
           ))}
+          {/* Duplicate set for seamless infinite scroll — hidden from search engines */}
+          <div className="contents" aria-hidden="true">
+            {testimonials.map((testimonial) => (
+              <TestimonialCard
+                key={`dup-${testimonial.id}`}
+                testimonial={testimonial}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

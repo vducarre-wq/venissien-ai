@@ -2,9 +2,6 @@ import Image from "next/image";
 import { clientLogos } from "@/data/clients";
 
 export function ClientLogos() {
-  // Duplicate logos for seamless infinite scroll
-  const duplicatedLogos = [...clientLogos, ...clientLogos];
-
   return (
     <section className="py-12 lg:py-16 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -23,9 +20,9 @@ export function ClientLogos() {
 
         {/* Marquee track */}
         <div className="flex animate-marquee w-max hover:[animation-play-state:paused]">
-          {duplicatedLogos.map((logo, index) => (
+          {clientLogos.map((logo) => (
             <div
-              key={`${logo.name}-${index}`}
+              key={logo.name}
               className="flex items-center justify-center mx-6 lg:mx-8 shrink-0"
             >
               <Image
@@ -37,6 +34,23 @@ export function ClientLogos() {
               />
             </div>
           ))}
+          {/* Duplicate set for seamless infinite scroll — hidden from search engines */}
+          <div className="contents" aria-hidden="true">
+            {clientLogos.map((logo) => (
+              <div
+                key={`dup-${logo.name}`}
+                className="flex items-center justify-center mx-6 lg:mx-8 shrink-0"
+              >
+                <Image
+                  src={logo.imagePath}
+                  alt=""
+                  width={logo.width}
+                  height={logo.height}
+                  className="h-10 lg:h-12 max-w-[160px] lg:max-w-[180px] w-auto object-contain grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

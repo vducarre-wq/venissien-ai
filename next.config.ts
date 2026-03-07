@@ -16,6 +16,22 @@ const nextConfig: NextConfig = {
         destination: "/formations/atelier-dashboard-fec",
         permanent: true,
       },
+      // Redirections des anciennes pages Systeme.io
+      {
+        source: "/promptotheque",
+        destination: "/formations",
+        permanent: true,
+      },
+      {
+        source: "/paiement",
+        destination: "/formations",
+        permanent: true,
+      },
+      {
+        source: "/paiement/:path*",
+        destination: "/formations",
+        permanent: true,
+      },
     ];
   },
   async headers() {

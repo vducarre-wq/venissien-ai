@@ -69,6 +69,7 @@ export const testimonials: Testimonial[] = [
     authorName: "Emily Pomet",
     rating: 5,
     date: "Novembre 2025",
+    featured: true,
   },
   {
     id: "rivollier",
@@ -181,6 +182,7 @@ export const testimonials: Testimonial[] = [
     authorName: "Rayane Farah",
     rating: 5,
     date: "Mai 2025",
+    featured: true,
   },
   {
     id: "ginier",
@@ -197,6 +199,7 @@ export const testimonials: Testimonial[] = [
     authorName: "Arnaud Marcerou",
     rating: 5,
     date: "Janvier 2025",
+    featured: true,
   },
   {
     id: "perez",
