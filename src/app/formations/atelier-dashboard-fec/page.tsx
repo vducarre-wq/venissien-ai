@@ -177,6 +177,18 @@ export default function AtelierDashboardFecPage() {
               partir d&apos;un FEC, sans coder, avec l&apos;IA comme seul outil.
             </p>
 
+            <div className="mt-10 mx-auto max-w-3xl rounded-xl overflow-hidden shadow-lg border border-border">
+              <Image
+                src="/images/dashboard-preview.gif"
+                alt="Aperçu du tableau de bord interactif créé à partir d'un FEC"
+                width={800}
+                height={500}
+                className="w-full h-auto"
+                unoptimized
+                priority
+              />
+            </div>
+
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
               <Button
                 asChild
