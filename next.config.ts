@@ -32,6 +32,22 @@ const nextConfig: NextConfig = {
         destination: "/formations",
         permanent: true,
       },
+      // Redirections des anciennes URLs en 404
+      {
+        source: "/actualites",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/actualites/:path*",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/guide-pratique-10-prompts-chatgpt-essentiels-pour-les-experts-comptables",
+        destination: "/blog",
+        permanent: true,
+      },
     ];
   },
   async headers() {

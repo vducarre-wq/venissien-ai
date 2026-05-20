@@ -38,10 +38,10 @@ export const metadata: Metadata = {
   title:
     "Atelier Dashboard FEC avec Claude - Tableau de bord interactif en 2h",
   description:
-    "Transformez vos FEC en dashboard interactif en 2h. Atelier live le 17 mars 2026 par Vénissien Ducarre, expert-comptable. 100 % en local, zéro code. +500 professionnels formés.",
+    "Transformez vos FEC en dashboard interactif en 2h. Atelier live le 23 juillet 2026 par Vénissien Ducarre, expert-comptable. 100 % en local, zéro code. +500 professionnels formés.",
   alternates: { canonical: "/formations/atelier-dashboard-fec" },
   openGraph: {
-    title: "Atelier Dashboard FEC avec Claude - 17 mars 2026",
+    title: "Atelier Dashboard FEC avec Claude - 23 juillet 2026",
     description:
       "Créez un tableau de bord interactif à partir de vos FEC en 2 heures. Atelier live animé par un expert-comptable praticien.",
     url: "https://venissien.ai/formations/atelier-dashboard-fec",
@@ -114,7 +114,7 @@ const programBlocs = [
 ];
 
 const deliverables199 = [
-  "Accès au live du 17 mars (17h30–19h30)",
+  "Accès au live du 23 juillet (17h30–19h30)",
   "Replay intégral sous 48h",
   "Support écrit complet (démarche + prompts structurés)",
   "FEC anonymisé d'exemple",
@@ -133,7 +133,7 @@ const guarantees = [
     icon: IconTime,
     title: "Replay inclus",
     description:
-      "Pas disponible le 17 mars ? Le replay complet + supports écrits sont envoyés sous 48h.",
+      "Pas disponible le 23 juillet ? Le replay complet + supports écrits sont envoyés sous 48h.",
   },
   {
     icon: IconAction,
@@ -163,7 +163,7 @@ export default function AtelierDashboardFecPage() {
               className="mb-6 text-sm px-4 py-1.5 inline-flex items-center gap-1.5"
             >
               <IconCalendar className="size-3.5" />
-              Mardi 17 mars 2026 - 17h30 à 19h30
+              Jeudi 23 juillet 2026 - 17h30 à 19h30
             </Badge>
 
             <h1 className="text-3xl sm:text-4xl lg:text-[56px] font-extrabold leading-tight text-foreground tracking-tight">
@@ -413,7 +413,7 @@ export default function AtelierDashboardFecPage() {
         <div className="container mx-auto px-4 max-w-3xl">
           <SectionHeader
             title={"Programme de l'atelier (2h)"}
-            subtitle="Mardi 17 mars 2026, de 17h30 à 19h30"
+            subtitle="Jeudi 23 juillet 2026, de 17h30 à 19h30"
           />
           <div className="mt-12">
             <Accordion type="single" collapsible className="w-full">
@@ -599,7 +599,7 @@ export default function AtelierDashboardFecPage() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight max-w-3xl mx-auto">
             {"FEC → Dashboard en 2 heures."}
             <br />
-            <span className="text-white/80">17 mars 2026 - 17h30.</span>
+            <span className="text-white/80">23 juillet 2026 - 17h30.</span>
           </h2>
           <p className="mt-5 text-lg text-white/80 max-w-xl mx-auto leading-relaxed">
             Rejoignez l&apos;atelier et transformez la façon dont vous présentez
@@ -643,8 +643,8 @@ export default function AtelierDashboardFecPage() {
             name: "Atelier Dashboard FEC avec Claude",
             description:
               "Transformez vos FEC en dashboard interactif en 2 heures. Atelier live animé par Vénissien Ducarre, expert-comptable.",
-            startDate: "2026-03-17T17:30:00+01:00",
-            endDate: "2026-03-17T19:30:00+01:00",
+            startDate: "2026-07-23T17:30:00+02:00",
+            endDate: "2026-07-23T19:30:00+02:00",
             eventAttendanceMode:
               "https://schema.org/OnlineEventAttendanceMode",
             eventStatus: "https://schema.org/EventScheduled",

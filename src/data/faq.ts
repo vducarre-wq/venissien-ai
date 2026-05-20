@@ -95,7 +95,7 @@ export const faqByPage: Record<string, FaqItem[]> = {
         "Ce n'est pas un webinaire : c'est un atelier avec un livrable concret que vous utiliserez dès le lendemain avec vos clients. Le temps gagné sur la préparation de vos rendez-vous bilan est amorti dès le premier client analysé.",
     },
     {
-      question: "Je ne suis pas disponible le 17 mars, puis-je quand même en profiter ?",
+      question: "Je ne suis pas disponible le 23 juillet, puis-je quand même en profiter ?",
       answer:
         "Oui. Le replay complet est envoyé sous 48h à tous les participants. Vous pourrez suivre l'atelier à votre rythme avec tous les supports écrits.",
     },
